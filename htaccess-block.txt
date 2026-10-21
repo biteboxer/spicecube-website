@@ -14,4 +14,3 @@ Header set Cache-Control "public, max-age=300, must-revalidate"
 </FilesMatch>
 </IfModule>
 # END SpiceCube static site
-
