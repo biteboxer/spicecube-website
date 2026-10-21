@@ -1,0 +1,17 @@
+# BEGIN SpiceCube static site
+DirectoryIndex index.html index.php
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^$ /index.html [L]
+RewriteRule ^en$ /en/ [R=301,L]
+</IfModule>
+<IfModule LiteSpeed>
+RewriteRule ^(index\.html|en/|en/index\.html)?$ - [E=Cache-Control:no-cache]
+</IfModule>
+<IfModule mod_headers.c>
+<FilesMatch "\.html$">
+Header set Cache-Control "public, max-age=300, must-revalidate"
+</FilesMatch>
+</IfModule>
+# END SpiceCube static site
+

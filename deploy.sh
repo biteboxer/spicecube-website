@@ -11,8 +11,8 @@ cp -f "$SRC/index.html" index.html
 cp -f "$SRC/en/index.html" en/index.html
 cp -f "$SRC"/img/* img/
 cp -f "$SRC/robots.txt" "$SRC/sitemap.xml" "$SRC/favicon.svg" .
-if ! grep -q "BEGIN SpiceCube" .htaccess; then
-  { printf '# BEGIN SpiceCube static site\nDirectoryIndex index.html index.php\n# END SpiceCube static site\n\n'; cat .htaccess.pre-spicecube; } > .htaccess.new
-  mv .htaccess.new .htaccess
-fi
+# (re)write our block at the top of .htaccess, keeping everything else as it is
+sed -i '/# BEGIN SpiceCube static site/,/# END SpiceCube static site/d' .htaccess
+cat "$ROOT/spicecube-site/htaccess-block.txt" .htaccess > .htaccess.new
+mv .htaccess.new .htaccess
 date > "$ROOT/spicecube-site/last-deploy.txt"
