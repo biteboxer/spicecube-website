@@ -1,0 +1,739 @@
+<!doctype html>
+<html data-lang="hu" lang="hu" data-fixed="hu"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SpiceCube | Indiai és pakisztáni halal étterem, Budapest VII.</title>
+<meta name="description" content="Halal indiai és pakisztáni étterem a Rózsa utcában: butter chicken, biryani, smash burger, deep-pan pizza és peri peri csirke. 4,9 csillag a Google-on, 756 értékelés.">
+<link rel="canonical" href="https://spicecube.hu/">
+<link rel="alternate" hreflang="hu" href="https://spicecube.hu/">
+<link rel="alternate" hreflang="en" href="https://spicecube.hu/en/">
+<link rel="alternate" hreflang="x-default" href="https://spicecube.hu/">
+<meta property="og:type" content="restaurant">
+<meta property="og:site_name" content="SpiceCube">
+<meta property="og:title" content="SpiceCube | Indiai és pakisztáni halal étterem, Budapest VII.">
+<meta property="og:description" content="Halal indiai és pakisztáni étterem a Rózsa utcában: butter chicken, biryani, smash burger, deep-pan pizza és peri peri csirke. 4,9 csillag a Google-on, 756 értékelés.">
+<meta property="og:url" content="https://spicecube.hu/">
+<meta property="og:image" content="https://spicecube.hu/img/og.jpg">
+<meta property="og:locale" content="hu_HU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="/img/burger-check.webp">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap">
+<style>
+/* Layout: monochrome, app-grade. Black stage for the hero and reviews, clean white menu like a premium delivery app: rounded photo cards, black pills, one serif italic for accent words. No colour except the food. */
+:root{
+  --black:#0A0A0A;
+  --black-2:#161616;
+  --black-3:#232323;
+  --white:#FFFFFF;
+  --grey-1:#F4F4F5;
+  --grey-2:#E4E4E7;
+  --grey-3:#A1A1AA;
+  --grey-4:#71717A;
+  --ink:#09090B;
+  --f-sans:"Geist", "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  --f-serif:"Instrument Serif", "Times New Roman", Georgia, serif;
+  --r-lg:22px; --r-md:16px; --r-sm:999px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--white);color:var(--ink);font-family:var(--f-sans);font-size:1rem;line-height:1.55;-webkit-font-smoothing:antialiased;letter-spacing:-.005em}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--black)}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:6px}
+.wrap{max-width:1280px;margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3,h4{margin:0;font-weight:600;letter-spacing:-.035em;line-height:1.02;text-wrap:balance}
+p{margin:0}
+.serif{font-family:var(--f-serif);font-weight:400;font-style:italic;letter-spacing:-.01em}
+.kicker{font-size:.78rem;font-weight:500;letter-spacing:.02em;color:var(--grey-4);display:inline-flex;align-items:center;gap:8px}
+.kicker::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+html[data-lang="en"] [lang="hu"]:not(html), html[data-lang="hu"] [lang="en"]:not(html){display:none!important}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 26px;border-radius:var(--r-sm);font-weight:500;font-size:.98rem;text-decoration:none;border:1px solid transparent;transition:transform .2s ease,background .2s ease,color .2s ease;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn-white{background:var(--white);color:var(--black)}
+.btn-white:hover{background:var(--grey-2)}
+.btn-outline-w{border-color:#3f3f46;color:var(--white)}
+.btn-outline-w:hover{border-color:var(--white)}
+.btn-black{background:var(--black);color:var(--white)}
+.btn-black:hover{background:#27272a}
+.btn-outline{border-color:var(--grey-2);color:var(--ink)}
+.btn-outline:hover{border-color:var(--ink)}
+.btn svg{width:18px;height:18px}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(10,10,10,.82);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);color:var(--white);border-bottom:1px solid rgba(255,255,255,.06)}
+.top .wrap{display:flex;align-items:center;gap:32px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;font-size:1.15rem;letter-spacing:-.03em}
+.logo img{height:40px;width:auto}
+.logo .cube{width:26px;height:26px;border-radius:7px;background:var(--white);position:relative;flex:none}
+.logo .cube::after{content:"";position:absolute;inset:7px;border-radius:2px;background:var(--black)}
+.nav{display:flex;gap:4px;margin-left:24px}
+.nav a{text-decoration:none;font-size:.9rem;color:var(--grey-3);padding:8px 14px;border-radius:var(--r-sm)}
+.nav a:hover{color:var(--white);background:rgba(255,255,255,.08)}
+.tools{display:flex;align-items:center;gap:10px;margin-left:auto}
+.seg{display:inline-flex;background:var(--black-3);border-radius:var(--r-sm);padding:3px}
+.seg button{all:unset;cursor:pointer;font-size:.78rem;font-weight:600;padding:6px 11px;border-radius:var(--r-sm);color:var(--grey-3)}
+.seg button[aria-pressed="true"]{background:var(--white);color:var(--black)}
+.seg button:focus-visible{outline:2px solid var(--white)}
+.top .btn{height:40px;padding:0 18px;font-size:.88rem}
+@media (max-width:900px){.nav{display:none}}
+@media (max-width:640px){.top .btn{display:none}}
+
+/* hero */
+.hero{background:var(--black);color:var(--white);overflow:hidden;padding-block:72px 0}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:end}
+.hero-grid > *{min-width:0}
+.chip{display:inline-flex;align-items:center;gap:10px;background:var(--black-3);border:1px solid #2e2e2e;border-radius:var(--r-sm);padding:6px 14px 6px 6px;font-size:.85rem;color:var(--grey-3);text-decoration:none}
+.chip b{background:var(--white);color:var(--black);border-radius:var(--r-sm);padding:3px 10px;font-weight:600}
+.chip .st{color:var(--white);letter-spacing:2px}
+.hero h1{font-size:clamp(2.7rem,6.6vw,5.4rem);margin-top:28px;font-weight:600}
+.hero h1 .serif{font-size:1.08em;color:#d4d4d8}
+.hero .lede{color:var(--grey-3);font-size:1.12rem;max-width:30em;margin-top:24px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.hero-side{display:flex;flex-direction:column;gap:14px;padding-bottom:6px}
+.hero-photo{margin:0 0 -64px;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:5/4;position:relative;box-shadow:0 40px 80px -30px rgba(0,0,0,.8)}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-photo figcaption{position:absolute;left:14px;top:14px;background:rgba(10,10,10,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;font-size:.8rem;font-weight:500;padding:6px 12px;border-radius:999px}
+.hero-side .stat-row,.hero-side .open-card{margin-inline:14px}
+.hero-burger{width:min(100%,440px);height:auto;margin:-20px auto -70px;position:relative;z-index:0;filter:drop-shadow(0 50px 50px rgba(0,0,0,.65)) drop-shadow(0 0 80px rgba(255,255,255,.06));animation:float 7s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px) rotate(-1deg)}}
+.hero-side .stat-row,.hero-side .open-card{position:relative;z-index:1}
+.hero-side .stat,.hero-side .open-card{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);background:rgba(22,22,22,.78)}
+@media (max-width:960px){.hero-photo{aspect-ratio:4/3}}
+.stat-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat{background:var(--black-2);border:1px solid #232323;border-radius:var(--r-md);padding:20px}
+.stat b{display:block;font-size:2rem;font-weight:600;letter-spacing:-.04em;line-height:1}
+.stat span{color:var(--grey-3);font-size:.85rem}
+.open-card{background:var(--black-2);border:1px solid #232323;border-radius:var(--r-md);padding:20px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.open-card .dot{width:8px;height:8px;border-radius:50%;background:var(--white);display:inline-block;margin-right:8px;box-shadow:0 0 0 4px rgba(255,255,255,.12)}
+.open-card .closed .dot{background:var(--grey-4);box-shadow:none}
+.open-card small{display:block;color:var(--grey-3);font-size:.85rem}
+.open-card a{font-size:.85rem;color:var(--white)}
+@media (max-width:960px){.hero-grid{grid-template-columns:1fr;gap:40px}.hero{padding-block:48px 0}}
+
+/* photo rail */
+.rail{margin-top:64px;padding-bottom:72px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.rail-track{display:flex;gap:16px;width:max-content;animation:rail 60s linear infinite}
+.rail:hover .rail-track{animation-play-state:paused}
+@keyframes rail{to{transform:translateX(-50%)}}
+.rail figure{margin:0;width:clamp(220px,24vw,320px);aspect-ratio:4/5;border-radius:var(--r-lg);overflow:hidden;position:relative;flex:none;background:var(--black-3)}
+.rail img{width:100%;height:100%;object-fit:cover}
+.rail figcaption{position:absolute;left:12px;bottom:12px;background:rgba(10,10,10,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--white);font-size:.8rem;font-weight:500;padding:6px 12px;border-radius:var(--r-sm)}
+
+/* bento */
+.section{padding-block:110px}
+.sec-top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.sec-top > div{display:flex;flex-direction:column;gap:14px;max-width:38rem}
+.sec-top h2{font-size:clamp(2rem,4vw,3.1rem)}
+.sec-top p{color:var(--grey-4);font-size:1.05rem}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:260px;gap:16px}
+.tile{border-radius:var(--r-lg);overflow:hidden;position:relative;background:var(--grey-1);min-width:0;display:flex;flex-direction:column;justify-content:flex-end;padding:26px;text-decoration:none}
+.tile.photo{color:var(--white)}
+.tile.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.tile.photo:hover img{transform:scale(1.04)}
+.tile.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.72) 100%)}
+.tile > *:not(img){position:relative;z-index:1}
+.tile h3{font-size:1.7rem}
+.tile p{font-size:.95rem;opacity:.85;margin-top:6px;max-width:26em}
+.tile .go{position:absolute;top:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--white);color:var(--black);display:grid;place-items:center;font-size:1.1rem;z-index:1}
+.tile.dark{background:var(--black);color:var(--white)}
+.tile.dark p{color:var(--grey-3);opacity:1}
+.t-big{grid-column:span 2;grid-row:span 2}
+.t-wide{grid-column:span 2}
+.tile .num{font-size:3.4rem;font-weight:600;letter-spacing:-.05em;line-height:1}
+@media (max-width:980px){.bento{grid-template-columns:1fr 1fr;grid-auto-rows:220px}}
+@media (max-width:600px){.bento{grid-template-columns:1fr;grid-auto-rows:auto}.tile{min-height:200px}.t-big,.t-wide{grid-column:auto;grid-row:auto}.t-big{min-height:360px}}
+
+/* menu */
+.menu{background:var(--grey-1);padding-block:100px 120px}
+.pills-bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 68px);z-index:20;background:rgba(244,244,245,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);margin-bottom:40px;border-bottom:1px solid var(--grey-2)}
+.pills{display:flex;gap:8px;overflow-x:auto;padding-block:14px;scrollbar-width:none}
+.pills::-webkit-scrollbar{display:none}
+.pills a{flex:none;text-decoration:none;font-size:.9rem;font-weight:500;padding:9px 16px;border-radius:var(--r-sm);background:var(--white);border:1px solid var(--grey-2);color:var(--ink);transition:background .2s,color .2s}
+.pills a:hover{border-color:var(--ink)}
+.pills a.on{background:var(--black);color:var(--white);border-color:var(--black)}
+.cat{scroll-margin-top:calc(env(safe-area-inset-top,0px) + 140px);margin-bottom:72px}
+.cat-top{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.cat-top h3{font-size:clamp(1.6rem,3vw,2.2rem)}
+.cat-top p{color:var(--grey-4);font-size:.95rem;margin-top:6px}
+.cat-note{display:inline-flex;align-items:center;gap:10px;background:var(--black);color:var(--white);padding:10px 16px;border-radius:var(--r-sm);font-size:.9rem;font-weight:500;margin-bottom:20px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--white);border-radius:var(--r-md);padding:20px;display:flex;gap:16px;min-width:0;border:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+.card:hover{border-color:var(--grey-2);box-shadow:0 10px 30px -18px rgba(0,0,0,.25)}
+.card-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
+.card h4{font-size:1.05rem;font-weight:600;letter-spacing:-.02em;line-height:1.3}
+.card .alt{font-size:.8rem;color:var(--grey-3)}
+.card .desc{font-size:.88rem;color:var(--grey-4);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card .foot{margin-top:auto;padding-top:8px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.price{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;letter-spacing:-.01em}
+.marks{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.mk{font-size:.72rem;font-weight:500;padding:3px 9px;border-radius:var(--r-sm);border:1px solid var(--grey-2);color:var(--grey-4)}
+.mk.new{background:var(--black);color:var(--white);border-color:var(--black)}
+.alg{font-size:.72rem;color:var(--grey-3)}
+.thumb{width:112px;height:112px;border-radius:12px;overflow:hidden;flex:none;background:var(--black)}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.card.feature{grid-column:span 2;padding:0;overflow:hidden}
+.card.stack{flex-direction:column;padding:0;overflow:hidden}
+.card.stack .thumb{width:100%;height:auto;aspect-ratio:4/3;border-radius:0}
+.card.stack .thumb img{transition:transform .6s ease}
+.card.stack:hover .thumb img{transform:scale(1.04)}
+.card.stack .card-body{padding:18px 20px 20px}
+.card.feature .thumb{width:55%;height:auto;border-radius:0;min-height:340px}
+.card.feature .card-body{padding:28px}
+.card.feature h4{font-size:1.4rem}
+.sizes{display:flex;gap:6px;flex-wrap:wrap}
+.size{display:flex;flex-direction:column;align-items:flex-start;background:var(--grey-1);border-radius:10px;padding:6px 11px;line-height:1.25}
+.size small{font-size:.68rem;color:var(--grey-4);font-weight:500}
+.size .price{font-size:.92rem}
+@media (max-width:1080px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:700px){
+  .cards{grid-template-columns:1fr 1fr;gap:10px}
+  .card.stack .card-body{padding:12px 12px 14px;gap:4px}
+  .card.stack h4{font-size:.95rem}
+  .card.stack .desc{font-size:.8rem;-webkit-line-clamp:2}
+  .card.stack .alt{font-size:.72rem}
+  .card.stack .alg{display:none}
+  .card.stack .size{padding:4px 7px}
+  .card.stack .size .price{font-size:.8rem}
+  .card.feature{grid-column:1/-1}
+  .card{padding:16px}
+  .thumb{width:96px;height:96px}
+  .card.feature{grid-column:1/-1;flex-direction:column}
+  .card.feature h4{font-size:1.2rem}
+  .card.feature .card-body{padding:16px}
+  .card.feature .thumb{width:100%;min-height:0;aspect-ratio:16/10}
+}
+.drinks{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.drinks > div{background:var(--white);border-radius:var(--r-md);padding:22px;min-width:0}
+.drinks h4{font-size:1.05rem;margin-bottom:10px}
+.drinks ul{list-style:none;margin:0;padding:0}
+.drinks li{display:flex;gap:10px;align-items:baseline;padding:9px 0;border-top:1px solid var(--grey-1);font-size:.92rem}
+.drinks li span:first-child{flex:1;min-width:0;color:#3f3f46}
+@media (max-width:1080px){.drinks{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.drinks{grid-template-columns:1fr}}
+.menu-foot{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.menu-foot > *{background:var(--white);border-radius:var(--r-md);padding:22px;min-width:0;font-size:.9rem;color:var(--grey-4)}
+details summary{cursor:pointer;font-weight:600;color:var(--ink);list-style:none;display:flex;justify-content:space-between}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";font-weight:400}
+details[open] summary::after{content:"−"}
+details ol{columns:2;column-gap:28px;margin:14px 0 0;padding-left:1.5em}
+@media (max-width:700px){.menu-foot{grid-template-columns:1fr}}
+
+/* reviews */
+.reviews{background:var(--black);color:var(--white)}
+.reviews .sec-top p{color:var(--grey-3)}
+.reviews .kicker{color:var(--grey-3)}
+.big-score{display:flex;align-items:center;gap:18px}
+.big-score b{font-size:5rem;font-weight:600;letter-spacing:-.06em;line-height:.9}
+.big-score > span{color:var(--grey-3);font-size:.9rem}
+.big-score .st{color:var(--white);letter-spacing:3px;font-size:1rem;display:block}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rv figure{margin:0;background:var(--black-2);border:1px solid #232323;border-radius:var(--r-lg);padding:28px;display:flex;flex-direction:column;gap:22px;min-width:0}
+.rv blockquote{margin:0;font-size:1.02rem;color:#e4e4e7}
+.rv .lead{grid-column:span 2;background:var(--white);color:var(--black);border-color:var(--white)}
+.rv .lead blockquote{font-family:var(--f-serif);font-size:clamp(1.6rem,2.8vw,2.3rem);line-height:1.2;color:var(--black)}
+.rv figcaption{margin-top:auto;font-size:.82rem;color:var(--grey-3);display:flex;align-items:center;gap:8px}
+.rv figcaption .st{color:inherit;letter-spacing:2px}
+.rv .lead figcaption{color:var(--grey-4)}
+@media (max-width:900px){.rv{grid-template-columns:1fr}.rv .lead{grid-column:auto}}
+
+/* visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.visit-grid > *{min-width:0}
+.panel{background:var(--grey-1);border-radius:var(--r-lg);padding:36px}
+.panel.dark{background:var(--black);color:var(--white)}
+.addr{font-size:clamp(1.7rem,3vw,2.4rem);font-weight:600;letter-spacing:-.04em;line-height:1.1}
+.addr small{display:block;font-size:1rem;font-weight:400;color:var(--grey-3);letter-spacing:0;margin-top:10px}
+.contact{margin:30px 0;display:grid;gap:4px}
+.contact a{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid #2a2a2a;text-decoration:none;font-size:1.05rem}
+.contact a span:first-child{color:var(--grey-3);font-size:.9rem}
+.panel .ctas{display:flex;flex-wrap:wrap;gap:10px}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;color:var(--ink)}
+.hours td{padding:14px 0;border-top:1px solid var(--grey-2);color:var(--ink)}
+.hours td:last-child{text-align:right;font-weight:500}
+.hours tr.today td{font-weight:700}
+.hours tr.today td:first-child::after{content:"  •";}
+.panel h3{font-size:1.3rem;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.status{font-size:.78rem;font-weight:600;background:var(--black);color:var(--white);border-radius:var(--r-sm);padding:5px 12px;letter-spacing:0}
+@media (max-width:860px){.visit-grid{grid-template-columns:1fr}.panel{padding:26px}}
+
+/* hero quote */
+.hq{margin-top:22px;font-family:var(--f-serif);font-style:italic;font-size:1.35rem;color:#e4e4e7;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
+.hq small{font-family:var(--f-sans);font-style:normal;font-size:.8rem;color:var(--grey-4)}
+/* review wall */
+.wall{display:flex;flex-direction:column;gap:14px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);margin-top:14px}
+.wall-row{display:flex;gap:14px;width:max-content;animation:rail 90s linear infinite}
+.wall-row.rev{animation-direction:reverse;animation-duration:110s}
+.wall:hover .wall-row{animation-play-state:paused}
+.rc{width:340px;flex:none;background:var(--black-2);border:1px solid #232323;border-radius:var(--r-lg);padding:24px;display:flex;flex-direction:column;gap:16px;white-space:normal}
+.rc .st{color:var(--white);letter-spacing:2px;font-size:.85rem}
+.rc p{color:#e4e4e7;font-size:.95rem;line-height:1.5}
+.rc .who{display:flex;align-items:center;gap:10px;margin-top:auto;font-size:.85rem}
+.rc .av{width:34px;height:34px;border-radius:50%;background:var(--white);color:var(--black);display:grid;place-items:center;font-weight:600;font-size:.85rem;flex:none}
+.rc .who small{display:block;color:var(--grey-4);font-size:.75rem}
+.tr-note{font-size:.72rem;color:var(--grey-4)}
+.g-badge{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;color:var(--grey-3)}
+/* faq */
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.faq details{background:var(--grey-1);border-radius:var(--r-md);padding:22px 24px;min-width:0}
+.faq summary{font-size:1.05rem;letter-spacing:-.015em;gap:16px}
+.faq details p{color:var(--grey-4);margin-top:12px;font-size:.95rem}
+@media (max-width:800px){.faq{grid-template-columns:1fr}}
+footer{background:var(--black);color:var(--grey-3);font-size:.85rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-block:30px}
+footer .logo{color:var(--white)}
+
+/* mobile app bar */
+.appbar{display:none}
+@media (max-width:700px){
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+  .appbar{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:55;background:rgba(10,10,10,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:10px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+  .appbar a{display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--grey-3);text-decoration:none;font-size:.72rem;font-weight:500;padding:6px 0;border-radius:12px}
+  .appbar a.main{background:var(--white);color:var(--black)}
+  .appbar svg{width:20px;height:20px}
+}
+</style>
+
+</head><body><header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="SpiceCube"><img src="/img/logo.webp" alt="SpiceCube" width="110" height="40"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#menu"><span lang="hu">Étlap</span></a>
+      <a href="#about"><span lang="hu">Rólunk</span></a>
+      <a href="#reviews"><span lang="hu">Vélemények</span></a>
+      <a href="#visit"><span lang="hu">Elérhetőség</span></a>
+    </nav>
+    <div class="tools">
+      <div class="seg" role="group" aria-label="Language">
+        <button type="button" id="lang-hu" data-set="hu" aria-pressed="true">HU</button>
+        <button type="button" id="lang-en" data-set="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn-white" href="tel:+36704267923">+36 70 426 7923</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <a class="chip" href="#reviews"><b>4.9</b><span class="st" aria-hidden="true">★★★★★</span><span lang="hu">756 Google-értékelés</span></a>
+        <h1>
+          
+          <span lang="hu">Halal indiai és pakisztáni konyha <span class="serif">Budapest szívében</span></span>
+        </h1>
+        <p class="hq" id="hq"><span lang="hu">„Budapest LEGJOBB smash burgerei.”</span><small><span lang="hu">Google-értékelés</span></small></p>
+        <p class="lede">
+          
+          <span lang="hu">Alapanyagból főzött pakisztáni és indiai ételek, naponta sütött zsemlében készülő smash burgerek és a deep-pan pizza, ami eddig hiányzott Budapestről. A Rózsa utca 39. alagsorában.</span>
+        </p>
+        <div class="ctas">
+          <a class="btn btn-white" href="#menu"><span lang="hu">Az étlap</span></a>
+          <a class="btn btn-outline-w" href="https://www.google.com/maps/dir/?api=1&amp;destination=SpiceCube%2C%20R%C3%B3zsa%20u.%2039%2C%201077%20Budapest&amp;destination_place_id=ChIJJZ7T1IzdQUcRq_umouCGos0" target="_blank" rel="noopener"><span lang="hu">Útvonal</span></a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <figure class="hero-photo"><img src="/img/burger-check.webp" alt="SpiceCube double smash burger" fetchpriority="high"><figcaption><span lang="hu">Tax dupla smash</span></figcaption></figure>
+        <div class="stat-row">
+          <div class="stat"><b>100%</b><span lang="hu">Halal, minden fogás</span></div>
+          <div class="stat"><b>55</b><span lang="hu">Fogás az étlapon</span></div>
+        </div>
+        <div class="open-card">
+          <div id="hero-status"><div class=""><span class="dot"></span><b><span lang="hu">Most nyitva</span></b><small><span lang="hu">Ma 23:30-ig</span></small></div></div>
+          <a href="#visit"><span lang="hu">Nyitvatartás</span> →</a>
+        </div>
+      </div>
+    </div>
+    <div class="rail" aria-label="Food from our kitchen">
+      <div class="rail-track" id="rail"><figure><img src="/img/burger-platter.webp" alt="" decoding="async"><figcaption><span lang="hu">Burger, szárnyak, sültkrumpli</span></figcaption></figure><figure><img src="/img/curry-new.webp" alt="" decoding="async"><figcaption><span lang="hu">Vajas csirke</span></figcaption></figure><figure><img src="/img/pizza-jalapeno-box.webp" alt="" decoding="async"><figcaption><span lang="hu">Tandoori különlegesség</span></figcaption></figure><figure><img src="/img/burger-check.webp" alt="" decoding="async"><figcaption><span lang="hu">Dupla smash</span></figcaption></figure><figure><img src="/img/palak.webp" alt="" decoding="async"><figcaption><span lang="hu">Spenótos csirke</span></figcaption></figure><figure><img src="/img/peri-rice.webp" alt="" decoding="async"><figcaption><span lang="hu">Peri peri csirke</span></figcaption></figure><figure><img src="/img/pizza-top.webp" alt="" decoding="async"><figcaption><span lang="hu">Deep-pan pizza</span></figcaption></figure><figure><img src="/img/keema.webp" alt="" decoding="async"><figcaption><span lang="hu">Keema matar</span></figcaption></figure><figure><img src="/img/rice-green.webp" alt="" decoding="async"><figcaption><span lang="hu">Tojásos sült rizs</span></figcaption></figure><figure><img src="/img/wings-fries.webp" alt="" decoding="async"><figcaption><span lang="hu">Szárnyak, masala krumpli</span></figcaption></figure><figure><img src="/img/burger-chilli.webp" alt="" decoding="async"><figcaption><span lang="hu">Zöld chilis smash</span></figcaption></figure><figure><img src="/img/burger-line.webp" alt="" decoding="async"><figcaption><span lang="hu">Frissen a grillről</span></figcaption></figure><figure><img src="/img/pizza-close.webp" alt="" decoding="async"><figcaption><span lang="hu">Szélig megrakva</span></figcaption></figure><figure aria-hidden="true"><img src="/img/burger-platter.webp" alt="" decoding="async"><figcaption><span lang="hu">Burger, szárnyak, sültkrumpli</span></figcaption></figure><figure aria-hidden="true"><img src="/img/curry-new.webp" alt="" decoding="async"><figcaption><span lang="hu">Vajas csirke</span></figcaption></figure><figure aria-hidden="true"><img src="/img/pizza-jalapeno-box.webp" alt="" decoding="async"><figcaption><span lang="hu">Tandoori különlegesség</span></figcaption></figure><figure aria-hidden="true"><img src="/img/burger-check.webp" alt="" decoding="async"><figcaption><span lang="hu">Dupla smash</span></figcaption></figure><figure aria-hidden="true"><img src="/img/palak.webp" alt="" decoding="async"><figcaption><span lang="hu">Spenótos csirke</span></figcaption></figure><figure aria-hidden="true"><img src="/img/peri-rice.webp" alt="" decoding="async"><figcaption><span lang="hu">Peri peri csirke</span></figcaption></figure><figure aria-hidden="true"><img src="/img/pizza-top.webp" alt="" decoding="async"><figcaption><span lang="hu">Deep-pan pizza</span></figcaption></figure><figure aria-hidden="true"><img src="/img/keema.webp" alt="" decoding="async"><figcaption><span lang="hu">Keema matar</span></figcaption></figure><figure aria-hidden="true"><img src="/img/rice-green.webp" alt="" decoding="async"><figcaption><span lang="hu">Tojásos sült rizs</span></figcaption></figure><figure aria-hidden="true"><img src="/img/wings-fries.webp" alt="" decoding="async"><figcaption><span lang="hu">Szárnyak, masala krumpli</span></figcaption></figure><figure aria-hidden="true"><img src="/img/burger-chilli.webp" alt="" decoding="async"><figcaption><span lang="hu">Zöld chilis smash</span></figcaption></figure><figure aria-hidden="true"><img src="/img/burger-line.webp" alt="" decoding="async"><figcaption><span lang="hu">Frissen a grillről</span></figcaption></figure><figure aria-hidden="true"><img src="/img/pizza-close.webp" alt="" decoding="async"><figcaption><span lang="hu">Szélig megrakva</span></figcaption></figure></div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="sec-top">
+        <div>
+          <span class="kicker"><span lang="hu">Három konyha, egy pult</span></span>
+          <h2><span lang="hu">Helyben készül. <span class="serif">Rövidítés nélkül.</span></span></h2>
+          <p><span lang="hu">A húspogácsát, a pizzatésztát és minden curry alapot mi készítjük. Mondja meg, mennyire szereti csípősen, és úgy főzzük.</span></p>
+        </div>
+      </div>
+      <div class="bento">
+        <a class="tile photo t-big" href="#pizza">
+          <img src="/img/pizza-jalapeno.webp" alt="Deep-pan pizza with jalapeños" decoding="async">
+          <span class="go" aria-hidden="true">↗</span>
+          <h3><span lang="hu">Deep-pan pizza</span></h3>
+          <p><span lang="hu">Egy falat Anglia Budapesten. Vastag, puha, bőven megrakott, három méretben.</span></p>
+        </a>
+        <a class="tile photo" href="#burgers">
+          <img src="/img/burger-cheese.webp" alt="Smash cheeseburger" decoding="async">
+          <span class="go" aria-hidden="true">↗</span>
+          <h3><span lang="hu">Smash burgerek</span></h3>
+        </a>
+        <a class="tile photo" href="#peri">
+          <img src="/img/peri-rice.webp" alt="Peri peri chicken with rice" decoding="async">
+          <span class="go" aria-hidden="true">↗</span>
+          <h3><span lang="hu">Peri peri</span></h3>
+        </a>
+        <a class="tile photo t-wide" href="#curries">
+          <img src="/img/curry-new.webp" alt="Butter chicken with basmati rice" decoding="async">
+          <span class="go" aria-hidden="true">↗</span>
+          <h3><span lang="hu">Curryk és biryani</span></h3>
+          <p><span lang="hu">Vajas csirke, keema matar, spenótos ételek és karak chai.</span></p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <div class="sec-top" style="margin-bottom:28px">
+        <div>
+          <span class="kicker"><span lang="hu">Étlap</span></span>
+          <h2><span lang="hu">Minden, amit <span class="serif">főzünk</span></span></h2>
+        </div>
+        <p style="color:var(--grey-4);max-width:24rem"><span lang="hu">Az árak forintban értendők. Az allergének számai az ételeknél, a lista az étlap végén.</span></p>
+      </div>
+    </div>
+    <div class="pills-bar"><div class="wrap"><nav class="pills" id="cats" aria-label="Menu sections"><a href="#starters" data-id="starters"><span lang="hu">Előételek és köretek</span></a><a href="#pizza" data-id="pizza"><span lang="hu">Deep-pan pizzák</span></a><a href="#burgers" data-id="burgers"><span lang="hu">Smash burgerek</span></a><a href="#peri" data-id="peri"><span lang="hu">Peri peri csirke</span></a><a href="#curries" data-id="curries"><span lang="hu">Curryk és biryani</span></a><a href="#spinach" data-id="spinach"><span lang="hu">Spenótos ételek</span></a><a href="#rice" data-id="rice"><span lang="hu">Rizses ételek</span></a><a href="#veg" data-id="veg"><span lang="hu">Vegetáriánus ételek</span></a><a href="#drinks" data-id="drinks"><span lang="hu">Italok</span></a></nav></div></div>
+    <div class="wrap" id="menu-body"><section class="cat" id="starters"><div class="cat-top"><div><h3><span lang="hu">Előételek és köretek</span></h3><p><span lang="hu">Leves, sajtos rudak, szárnyak és sültkrumpli.</span></p></div></div><div class="cards"><article class="card feature"><div class="thumb"><img src="/img/wings-plate.webp" alt="Peri Peri Wings (6 pcs)" decoding="async"></div><div class="card-body"><h4><span lang="hu">Peri peri szárnyak (6 db)</span></h4><span class="alt"><span lang="hu">Peri Peri Wings (6 pcs)</span></span><p class="desc"><span lang="hu">Hat peri peri szószban pácolt, grillezett csirkeszárny.</span></p><div class="foot"><span class="price">1850&nbsp;Ft</span></div><div class="marks"><span class="mk hot"><span lang="hu">Csípős</span></span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/garlic-sticks.webp" alt="Garlic Cheese Sticks" decoding="async"></div><div class="card-body"><h4><span lang="hu">Fokhagymás sajtos rúd</span></h4><span class="alt"><span lang="hu">Garlic Cheese Sticks</span></span><p class="desc"><span lang="hu">4 db frissen sült rúd, fokhagymás vajjal és olvasztott mozzarellával.</span></p><div class="foot"><span class="price">1995&nbsp;Ft</span></div><div class="marks"><span class="mk new"><span lang="hu">Új</span></span><span class="mk veg"><span lang="hu">Vegetáriánus</span></span><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/cheese-sticks-2.webp" alt="Cheese Sticks (2 pcs)" decoding="async"></div><div class="card-body"><h4><span lang="hu">Sajtos rudak (2 db)</span></h4><span class="alt"><span lang="hu">Cheese Sticks (2 pcs)</span></span><p class="desc"><span lang="hu">2 db sütőben sült sajtos rúd, olvadt mozzarellával és fűszerekkel.</span></p><div class="foot"><span class="price">1650&nbsp;Ft</span></div><div class="marks"><span class="mk veg"><span lang="hu">Vegetáriánus</span></span><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/soup.webp" alt="Red Lentil Soup" decoding="async"></div><div class="card-body"><h4><span lang="hu">Vöröslencse leves</span></h4><span class="alt"><span lang="hu">Red Lentil Soup</span></span><p class="desc"><span lang="hu">Laktató leves vöröslencséből és fűszerekből.</span></p><div class="foot"><span class="price">1250&nbsp;Ft</span></div><div class="marks"><span class="mk veg"><span lang="hu">Vegetáriánus</span></span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/fries-3.webp" alt="Masala Fries" decoding="async"></div><div class="card-body"><h4><span lang="hu">Masala sültkrumpli</span></h4><span class="alt"><span lang="hu">Masala Fries</span></span><p class="desc"><span lang="hu">Fűszeres sültkrumpli, választható mártással.</span></p><div class="foot"><span class="price">1450&nbsp;Ft</span></div><div class="marks"><span class="mk new"><span lang="hu">Új</span></span><span class="mk veg"><span lang="hu">Vegetáriánus</span></span><span class="mk hot"><span lang="hu">Csípős</span></span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/fries-1.webp" alt="Crispy Fries" decoding="async"></div><div class="card-body"><h4><span lang="hu">Ropogós sültkrumpli</span></h4><span class="alt"><span lang="hu">Crispy Fries</span></span><p class="desc"><span lang="hu">Aranybarna, kívül ropogós, belül puha.</span></p><div class="foot"><span class="price">1450&nbsp;Ft</span></div><div class="marks"><span class="mk veg"><span lang="hu">Vegetáriánus</span></span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/fries-2.webp" alt="Crispy Potato Wedges" decoding="async"></div><div class="card-body"><h4><span lang="hu">Ropogós burgonyagerezd</span></h4><span class="alt"><span lang="hu">Crispy Potato Wedges</span></span><p class="desc"><span lang="hu">Fűszerezett, ropogósra sütött burgonyagerezdek.</span></p><div class="foot"><span class="price">1695&nbsp;Ft</span></div><div class="marks"><span class="mk veg"><span lang="hu">Vegetáriánus</span></span></div></div></article></div></section><section class="cat" id="pizza"><div class="cat-top"><div><h3><span lang="hu">Deep-pan pizzák</span></h3><p><span lang="hu">Egy falat Anglia Budapesten. Három méretben.</span></p></div></div><div class="cards"><article class="card feature"><div class="thumb"><img src="/img/pizza-special.webp" alt="SpiceCube Special" decoding="async"></div><div class="card-body"><h4><span lang="hu">SpiceCube különlegesség</span></h4><span class="alt"><span lang="hu">SpiceCube Special</span></span><p class="desc"><span lang="hu">Mozzarella, paradicsom, csirke, hagyma, paprika, chili és kukorica</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2495&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="mk hot"><span lang="hu">Csípős</span></span><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-check.webp" alt="Margherita" decoding="async"></div><div class="card-body"><h4><span lang="hu">Margherita</span></h4><p class="desc"><span lang="hu">Mozzarella, paradicsom és olasz fűszerek</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2995&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3850&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4750&nbsp;Ft</span></span></div></div><div class="marks"><span class="mk veg"><span lang="hu">Vegetáriánus</span></span><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-chicken-corn.webp" alt="Chicken Corn" decoding="async"></div><div class="card-body"><h4><span lang="hu">Csirkés kukorica</span></h4><span class="alt"><span lang="hu">Chicken Corn</span></span><p class="desc"><span lang="hu">Mozzarella, paradicsom, csirke és kukorica</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2995&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-17.webp" alt="Prosciutto" decoding="async"></div><div class="card-body"><h4><span lang="hu">Prosciutto</span></h4><p class="desc"><span lang="hu">Mozzarella, paradicsom és sonka</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2995&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-twin-a.webp" alt="Prosciutto Funghi" decoding="async"></div><div class="card-body"><h4><span lang="hu">Prosciutto gombával</span></h4><span class="alt"><span lang="hu">Prosciutto Funghi</span></span><p class="desc"><span lang="hu">Mozzarella, paradicsom, sonka és gomba</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2495&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-box.webp" alt="Hawaiian" decoding="async"></div><div class="card-body"><h4><span lang="hu">Hawaii</span></h4><span class="alt"><span lang="hu">Hawaiian</span></span><p class="desc"><span lang="hu">Mozzarella, paradicsom, sonka és ananász</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2495&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-close.webp" alt="Mafiosa" decoding="async"></div><div class="card-body"><h4><span lang="hu">Mafiosa</span></h4><p class="desc"><span lang="hu">Mozzarella, paradicsom és pepperoni</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2495&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-pair-b.webp" alt="Americana" decoding="async"></div><div class="card-body"><h4><span lang="hu">Amerikai</span></h4><span class="alt"><span lang="hu">Americana</span></span><p class="desc"><span lang="hu">Mozzarella, paradicsom, pepperoni, hagyma és paprika</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2495&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-slice.webp" alt="Mighty Meaty" decoding="async"></div><div class="card-body"><h4><span lang="hu">Húsimádó</span></h4><span class="alt"><span lang="hu">Mighty Meaty</span></span><p class="desc"><span lang="hu">Mozzarella, paradicsom, pepperoni, sonka, csirke és darált hús</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2495&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-pair.webp" alt="Seafood" decoding="async"></div><div class="card-body"><h4><span lang="hu">Tenger gyümölcsei</span></h4><span class="alt"><span lang="hu">Seafood</span></span><p class="desc"><span lang="hu">Mozzarella, paradicsom, tonhal és garnélarák</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2495&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="alg"><span lang="hu">Allergének</span>: 1, 2, 4, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-twin.webp" alt="Pescatori" decoding="async"></div><div class="card-body"><h4><span lang="hu">Halász</span></h4><span class="alt"><span lang="hu">Pescatori</span></span><p class="desc"><span lang="hu">Mozzarella, paradicsom, tonhal, garnélarák és fokhagyma</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2495&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="alg"><span lang="hu">Allergének</span>: 1, 2, 4, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-17.webp" alt="Pollo" decoding="async"></div><div class="card-body"><h4><span lang="hu">Csirke</span></h4><span class="alt"><span lang="hu">Pollo</span></span><p class="desc"><span lang="hu">Mozzarella, paradicsom és csirke</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2495&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-check.webp" alt="Pollo e Funghi" decoding="async"></div><div class="card-body"><h4><span lang="hu">Csirke és gomba</span></h4><span class="alt"><span lang="hu">Pollo e Funghi</span></span><p class="desc"><span lang="hu">Mozzarella, paradicsom, csirke és gomba</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2495&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-slice.webp" alt="Cannelloni" decoding="async"></div><div class="card-body"><h4><span lang="hu">Cannelloni</span></h4><p class="desc"><span lang="hu">Mozzarella, paradicsom, darált hús és hagyma</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2495&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-jalapeno-box.webp" alt="Tandoori Special" decoding="async"></div><div class="card-body"><h4><span lang="hu">Tandoori különlegesség</span></h4><span class="alt"><span lang="hu">Tandoori Special</span></span><p class="desc"><span lang="hu">Fokhagymás alap, mozzarella, friss paradicsom, csirke, paprika, kukorica és chili</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2495&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="mk hot"><span lang="hu">Csípős</span></span><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-top.webp" alt="Vegetarian" decoding="async"></div><div class="card-body"><h4><span lang="hu">Vegetáriánus</span></h4><span class="alt"><span lang="hu">Vegetarian</span></span><p class="desc"><span lang="hu">Mozzarella, paradicsom, hagyma, paprika, kukorica és gomba</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2495&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="mk veg"><span lang="hu">Vegetáriánus</span></span><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-close.webp" alt="Funghi" decoding="async"></div><div class="card-body"><h4><span lang="hu">Gomba</span></h4><span class="alt"><span lang="hu">Funghi</span></span><p class="desc"><span lang="hu">Mozzarella, paradicsom és gomba</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2495&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="mk veg"><span lang="hu">Vegetáriánus</span></span><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/pizza-jalapeno.webp" alt="Garlic Bread" decoding="async"></div><div class="card-body"><h4><span lang="hu">Fokhagymás kenyér</span></h4><span class="alt"><span lang="hu">Garlic Bread</span></span><p class="desc"><span lang="hu">Frissen sütve, fokhagymás vajjal és mozzarellával</span></p><div class="foot"><div class="sizes"><span class="size"><small>24 cm</small><span class="price">2495&nbsp;Ft</span></span><span class="size"><small>26 cm</small><span class="price">3495&nbsp;Ft</span></span><span class="size"><small>30 cm</small><span class="price">4495&nbsp;Ft</span></span></div></div><div class="marks"><span class="mk veg"><span lang="hu">Vegetáriánus</span></span><span class="alg"><span lang="hu">Allergének</span>: 1, 7</span></div></div></article></div></section><section class="cat" id="burgers"><div class="cat-top"><div><h3><span lang="hu">Smash burgerek</span></h3><p><span lang="hu">Házi zsemle és titkos szószunk.</span></p></div></div><p class="cat-note"><span lang="hu">Sültkrumplival és itallal menü: +1 450 Ft.</span></p><div class="cards"><article class="card feature"><div class="thumb"><img src="/img/burger-check.webp" alt="Tax Double Smash Cheese Burger" decoding="async"></div><div class="card-body"><h4><span lang="hu">Tax dupla smash sajtburger</span></h4><span class="alt"><span lang="hu">Tax Double Smash Cheese Burger</span></span><p class="desc"><span lang="hu">Dupla marhahúspogácsa sajttal, speciális szószunkkal és savanyúsággal.</span></p><div class="foot"><span class="price">3995&nbsp;Ft</span></div><div class="marks"></div></div></article><article class="card stack"><div class="thumb"><img src="/img/burger-classic.webp" alt="Tax Smash Hamburger" decoding="async"></div><div class="card-body"><h4><span lang="hu">Tax Smash hamburger</span></h4><p class="desc"><span lang="hu">Szaftos marhahúspogácsa frissen sült zsemlében, speciális szószunkkal és sajttal.</span></p><div class="foot"><span class="price">2995&nbsp;Ft</span></div><div class="marks"></div></div></article><article class="card stack"><div class="thumb"><img src="/img/burger-cheese.webp" alt="Tax Smash Cheese Burger" decoding="async"></div><div class="card-body"><h4><span lang="hu">Tax Smash sajtburger</span></h4><span class="alt"><span lang="hu">Tax Smash Cheese Burger</span></span><p class="desc"><span lang="hu">Marhahúspogácsa sajttal, speciális szószunkkal, savanyúsággal és sült hagymával.</span></p><div class="foot"><span class="price">2995&nbsp;Ft</span></div><div class="marks"></div></div></article><article class="card stack"><div class="thumb"><img src="/img/burger-chilli.webp" alt="Tax Beef Smash Burger" decoding="async"></div><div class="card-body"><h4><span lang="hu">Tax marhahúsos smash burger</span></h4><span class="alt"><span lang="hu">Tax Beef Smash Burger</span></span><p class="desc"><span lang="hu">Marhahúspogácsa zöld chilivel, sajttal, speciális szószunkkal és savanyúsággal.</span></p><div class="foot"><span class="price">2995&nbsp;Ft</span></div><div class="marks"><span class="mk hot"><span lang="hu">Csípős</span></span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/burger-pickle.webp" alt="Tax Smash Hawaiian Burger" decoding="async"></div><div class="card-body"><h4><span lang="hu">Tax Smash hawaii burger</span></h4><span class="alt"><span lang="hu">Tax Smash Hawaiian Burger</span></span><p class="desc"><span lang="hu">Marhahúspogácsa sajttal, speciális szószunkkal, savanyúsággal és ananászszelettel.</span></p><div class="foot"><span class="price">3295&nbsp;Ft</span></div><div class="marks"></div></div></article><article class="card stack"><div class="thumb"><img src="/img/burger-jalapeno.webp" alt="Tax Smash Jalapeño Burger" decoding="async"></div><div class="card-body"><h4><span lang="hu">Tax Smash jalapeño burger</span></h4><p class="desc"><span lang="hu">Marhahúspogácsa speciális szószunkkal, sajttal, savanyúsággal és jalapeñóval.</span></p><div class="foot"><span class="price">3295&nbsp;Ft</span></div><div class="marks"><span class="mk hot"><span lang="hu">Csípős</span></span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/burger-platter-2.webp" alt="Tax Smash BBQ Burger" decoding="async"></div><div class="card-body"><h4><span lang="hu">Tax Smash BBQ burger</span></h4><p class="desc"><span lang="hu">Dupla marhahúspogácsa, dupla cheddar, BBQ szósz, ropogós hagyma és saláta.</span></p><div class="foot"><span class="price">3995&nbsp;Ft</span></div><div class="marks"></div></div></article></div></section><section class="cat" id="peri"><div class="cat-top"><div><h3><span lang="hu">Peri peri csirke</span></h3><p><span lang="hu">Peri peri szószban pácolva, lassan grillezve.</span></p></div></div><div class="cards"><article class="card feature"><div class="thumb"><img src="/img/peri-rice.webp" alt="Half Peri Peri Chicken" decoding="async"></div><div class="card-body"><h4><span lang="hu">Fél peri peri csirke</span></h4><span class="alt"><span lang="hu">Half Peri Peri Chicken</span></span><p class="desc"><span lang="hu">Fél csirke peri peri szószban pácolva és grillezve.</span></p><div class="foot"><span class="price">4595&nbsp;Ft</span></div><div class="marks"><span class="mk hot"><span lang="hu">Csípős</span></span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/peri-quarter.webp" alt="Quarter Peri Peri Chicken" decoding="async"></div><div class="card-body"><h4><span lang="hu">Negyed peri peri csirke</span></h4><span class="alt"><span lang="hu">Quarter Peri Peri Chicken</span></span><p class="desc"><span lang="hu">Negyed csirke peri peri szószban pácolva és grillezve.</span></p><div class="foot"><span class="price">2295&nbsp;Ft</span></div><div class="marks"><span class="mk hot"><span lang="hu">Csípős</span></span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/peri-box.webp" alt="Whole Peri Peri Chicken" decoding="async"></div><div class="card-body"><h4><span lang="hu">Egész peri peri csirke</span></h4><span class="alt"><span lang="hu">Whole Peri Peri Chicken</span></span><p class="desc"><span lang="hu">Egész csirke peri peri szószban pácolva és grillezve.</span></p><div class="foot"><span class="price">7995&nbsp;Ft</span></div><div class="marks"><span class="mk hot"><span lang="hu">Csípős</span></span></div></div></article></div></section><section class="cat" id="curries"><div class="cat-top"><div><h3><span lang="hu">Curryk és biryani</span></h3><p><span lang="hu">Pakisztáni és indiai klasszikusok. A marhás ételekhez basmati rizs vagy friss paratha jár.</span></p></div></div><div class="cards"><article class="card feature"><div class="thumb"><img src="/img/curry-new.webp" alt="Butter Chicken with Basmati Rice" decoding="async"></div><div class="card-body"><h4><span lang="hu">Vajas csirke basmati rizzsel</span></h4><span class="alt"><span lang="hu">Butter Chicken with Basmati Rice</span></span><p class="desc"><span lang="hu">Pácolt csirkedarabok lágy, krémes paradicsomos vajszószban. Az egyik legnépszerűbb indiai fogás.</span></p><div class="foot"><span class="price">2995&nbsp;Ft</span></div><div class="marks"></div></div></article><article class="card stack"><div class="thumb"><img src="/img/fried-rice.webp" alt="Chicken Biryani" decoding="async"></div><div class="card-body"><h4><span lang="hu">Csirke biryani</span></h4><span class="alt"><span lang="hu">Chicken Biryani</span></span><p class="desc"><span lang="hu">Fűszeres csirke illatos basmati rizzsel rétegezve, lassan főzve gyógynövényekkel és aromás fűszerekkel.</span></p><div class="foot"><span class="price">2995&nbsp;Ft</span></div><div class="marks"></div></div></article><article class="card stack"><div class="thumb"><img src="/img/curry-new-2.webp" alt="Chicken Tikka Masala with Basmati Rice" decoding="async"></div><div class="card-body"><h4><span lang="hu">Csirke tikka masala basmati rizzsel</span></h4><span class="alt"><span lang="hu">Chicken Tikka Masala with Basmati Rice</span></span><p class="desc"><span lang="hu">Pácolt csirkemell fűszeres paradicsomos-tejszínes szószban. Igazi klasszikus.</span></p><div class="foot"><span class="price">2995&nbsp;Ft</span></div><div class="marks"></div></div></article><article class="card stack"><div class="thumb"><img src="/img/curry-pan.webp" alt="Chicken Curry with Basmati Rice" decoding="async"></div><div class="card-body"><h4><span lang="hu">Csirke curry basmati rizzsel</span></h4><span class="alt"><span lang="hu">Chicken Curry with Basmati Rice</span></span><p class="desc"><span lang="hu">Csirkedarabok házias, fűszeres curry szószban főzve.</span></p><div class="foot"><span class="price">2995&nbsp;Ft</span></div><div class="marks"></div></div></article><article class="card stack"><div class="thumb"><img src="/img/keema.webp" alt="Keema Matar with Basmati Rice" decoding="async"></div><div class="card-body"><h4><span lang="hu">Keema matar basmati rizzsel</span></h4><span class="alt"><span lang="hu">Keema Matar with Basmati Rice</span></span><p class="desc"><span lang="hu">Darált hús zöldborsóval, hagymával, paradicsommal és hagyományos fűszerekkel főzve.</span></p><div class="foot"><span class="price">3995&nbsp;Ft</span></div><div class="marks"></div></div></article><article class="card stack"><div class="thumb"><img src="/img/curry-new-3.webp" alt="Beef Tikka Masala" decoding="async"></div><div class="card-body"><h4><span lang="hu">Marha tikka masala</span></h4><span class="alt"><span lang="hu">Beef Tikka Masala</span></span><p class="desc"><span lang="hu">Omlós marhahús fűszeres paradicsomos-tejszínes szószban, basmati rizzsel vagy parathával.</span></p><div class="foot"><span class="price">3995&nbsp;Ft</span></div><div class="marks"></div></div></article><article class="card stack"><div class="thumb"><img src="/img/keema-2.webp" alt="Beef Curry" decoding="async"></div><div class="card-body"><h4><span lang="hu">Marha curry</span></h4><span class="alt"><span lang="hu">Beef Curry</span></span><p class="desc"><span lang="hu">Aromás curry szószban párolt marhahús, basmati rizzsel vagy vajas parathával. Fűszeres és laktató.</span></p><div class="foot"><span class="price">3995&nbsp;Ft</span></div><div class="marks"></div></div></article><article class="card stack"><div class="thumb"><img src="/img/curry-new-4.webp" alt="Butter Beef" decoding="async"></div><div class="card-body"><h4><span lang="hu">Vajas marha</span></h4><span class="alt"><span lang="hu">Butter Beef</span></span><p class="desc"><span lang="hu">Marhahús lágy, krémes paradicsomos vajszószban, basmati rizzsel vagy parathával.</span></p><div class="foot"><span class="price">3995&nbsp;Ft</span></div><div class="marks"></div></div></article></div></section><section class="cat" id="spinach"><div class="cat-top"><div><h3><span lang="hu">Spenótos ételek</span></h3><p><span lang="hu">Palak ételek: fűszerekkel lassan főtt spenót.</span></p></div></div><div class="cards"><article class="card feature"><div class="thumb"><img src="/img/palak.webp" alt="Palak Chicken" decoding="async"></div><div class="card-body"><h4><span lang="hu">Spenótos csirke</span></h4><span class="alt"><span lang="hu">Palak Chicken</span></span><p class="desc"><span lang="hu">Spenót fűszeres csirkehússal.</span></p><div class="foot"><span class="price">3295&nbsp;Ft</span></div><div class="marks"></div></div></article><article class="card stack"><div class="thumb"><img src="/img/palak-2.webp" alt="Palak Paneer" decoding="async"></div><div class="card-body"><h4><span lang="hu">Spenótos paneer</span></h4><span class="alt"><span lang="hu">Palak Paneer</span></span><p class="desc"><span lang="hu">Indiai spenótos étel házi sajttal, fűszeres mártásban.</span></p><div class="foot"><span class="price">2995&nbsp;Ft</span></div><div class="marks"><span class="mk veg"><span lang="hu">Vegetáriánus</span></span><span class="alg"><span lang="hu">Allergének</span>: 7</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/palak-3.webp" alt="Palak Chana" decoding="async"></div><div class="card-body"><h4><span lang="hu">Spenótos csicseriborsó</span></h4><span class="alt"><span lang="hu">Palak Chana</span></span><p class="desc"><span lang="hu">Spenót csicseriborsóval, aromás fűszerekkel.</span></p><div class="foot"><span class="price">3295&nbsp;Ft</span></div><div class="marks"><span class="mk veg"><span lang="hu">Vegetáriánus</span></span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/palak-4.webp" alt="Palak Beef" decoding="async"></div><div class="card-body"><h4><span lang="hu">Spenótos marhahús</span></h4><span class="alt"><span lang="hu">Palak Beef</span></span><p class="desc"><span lang="hu">Spenót fűszeres marhahússal.</span></p><div class="foot"><span class="price">4295&nbsp;Ft</span></div><div class="marks"></div></div></article></div></section><section class="cat" id="rice"><div class="cat-top"><div><h3><span lang="hu">Rizses ételek</span></h3><p><span lang="hu">Basmati rizs, rendelésre pirítva.</span></p></div></div><div class="cards"><article class="card feature"><div class="thumb"><img src="/img/rice-green.webp" alt="Egg Fried Rice" decoding="async"></div><div class="card-body"><h4><span lang="hu">Tojásos sült rizs</span></h4><span class="alt"><span lang="hu">Egg Fried Rice</span></span><p class="desc"><span lang="hu">Illatos basmati rizs tojással, zöldségekkel és fűszerekkel pirítva.</span></p><div class="foot"><span class="price">2995&nbsp;Ft</span></div><div class="marks"><span class="mk veg"><span lang="hu">Vegetáriánus</span></span><span class="alg"><span lang="hu">Allergének</span>: 3</span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/fried-rice-2.webp" alt="Chicken Fried Rice" decoding="async"></div><div class="card-body"><h4><span lang="hu">Csirkés sült rizs</span></h4><span class="alt"><span lang="hu">Chicken Fried Rice</span></span><p class="desc"><span lang="hu">Basmati rizs csirkével, zöldségekkel és fűszerekkel pirítva.</span></p><div class="foot"><span class="price">2995&nbsp;Ft</span></div><div class="marks"></div></div></article><article class="card stack"><div class="thumb"><img src="/img/veg-rice.webp" alt="Vegetable Fried Rice" decoding="async"></div><div class="card-body"><h4><span lang="hu">Zöldséges sült rizs</span></h4><span class="alt"><span lang="hu">Vegetable Fried Rice</span></span><p class="desc"><span lang="hu">Illatos basmati rizs fűszeres zöldségekkel.</span></p><div class="foot"><span class="price">2995&nbsp;Ft</span></div><div class="marks"><span class="mk veg"><span lang="hu">Vegetáriánus</span></span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/rice-green-2.webp" alt="Beef Mince Fried Rice" decoding="async"></div><div class="card-body"><h4><span lang="hu">Darált marhás sült rizs</span></h4><span class="alt"><span lang="hu">Beef Mince Fried Rice</span></span><p class="desc"><span lang="hu">Basmati rizs darált marhahússal, zöldségekkel és fűszerekkel pirítva.</span></p><div class="foot"><span class="price">3995&nbsp;Ft</span></div><div class="marks"></div></div></article></div></section><section class="cat" id="veg"><div class="cat-top"><div><h3><span lang="hu">Vegetáriánus ételek</span></h3><p><span lang="hu">Mindegyik basmati rizzsel.</span></p></div></div><div class="cards"><article class="card stack"><div class="thumb"><img src="/img/curry-pan.webp" alt="Vegetable Curry" decoding="async"></div><div class="card-body"><h4><span lang="hu">Zöldség curry</span></h4><span class="alt"><span lang="hu">Vegetable Curry</span></span><p class="desc"><span lang="hu">Fűszeres vegyes zöldségek ízletes curry szószban.</span></p><div class="foot"><span class="price">2995&nbsp;Ft</span></div><div class="marks"><span class="mk veg"><span lang="hu">Vegetáriánus</span></span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/curry-new-3.webp" alt="Chickpea Curry" decoding="async"></div><div class="card-body"><h4><span lang="hu">Csicseriborsó curry</span></h4><span class="alt"><span lang="hu">Chickpea Curry</span></span><p class="desc"><span lang="hu">Tápláló csicseriborsó gazdag, fűszeres szószban.</span></p><div class="foot"><span class="price">2995&nbsp;Ft</span></div><div class="marks"><span class="mk veg"><span lang="hu">Vegetáriánus</span></span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/curry-new-2.webp" alt="Dal Chawal" decoding="async"></div><div class="card-body"><h4><span lang="hu">Dál chawal (lencse rizzsel)</span></h4><span class="alt"><span lang="hu">Dal Chawal</span></span><p class="desc"><span lang="hu">Hagyományos lencse aromás fűszerekkel főzve.</span></p><div class="foot"><span class="price">2995&nbsp;Ft</span></div><div class="marks"><span class="mk veg"><span lang="hu">Vegetáriánus</span></span></div></div></article><article class="card stack"><div class="thumb"><img src="/img/fried-rice-2.webp" alt="Vegetable Biryani" decoding="async"></div><div class="card-body"><h4><span lang="hu">Zöldséges biryani</span></h4><span class="alt"><span lang="hu">Vegetable Biryani</span></span><p class="desc"><span lang="hu">Illatos basmati rizs fűszeres zöldségekkel főzve.</span></p><div class="foot"><span class="price">2995&nbsp;Ft</span></div><div class="marks"><span class="mk veg"><span lang="hu">Vegetáriánus</span></span></div></div></article></div></section><section class="cat" id="drinks"><div class="cat-top"><div><h3><span lang="hu">Italok</span></h3><p><span lang="hu">A karak chai tejjel és tealevelekkel, lassan fő.</span></p></div></div><div class="drinks"><div><h4><span lang="hu">Tea és lassi</span></h4><ul><li><span><span lang="hu">Karak tea</span></span><span class="price">795&nbsp;Ft</span></li><li><span><span lang="hu">Mangó lassi</span></span><span class="price">995&nbsp;Ft</span></li></ul></div><div><h4><span lang="hu">Üdítők</span></h4><ul><li><span><span lang="hu">Pepsi (dobozos)</span></span><span class="price">695&nbsp;Ft</span></li><li><span><span lang="hu">Coca-Cola (dobozos)</span></span><span class="price">695&nbsp;Ft</span></li><li><span><span lang="hu">Limonádé</span></span><span class="price">799&nbsp;Ft</span></li><li><span><span lang="hu">Gyerek gyümölcslé</span></span><span class="price">499&nbsp;Ft</span></li><li><span><span lang="hu">Víz, mentes vagy szénsavas</span></span><span class="price">450&nbsp;Ft</span></li></ul></div><div><h4><span lang="hu">Sör (dobozos)</span></h4><ul><li><span><span lang="hu">Argus, Carlsberg, Stella Artois, Borsodi</span></span><span class="price">995&nbsp;Ft</span></li><li><span><span lang="hu">Alkoholmentes sörök</span></span><span class="price">895&nbsp;Ft</span></li></ul></div><div><h4><span lang="hu">Bor</span></h4><ul><li><span><span lang="hu">Vörösbor, ettől</span></span><span class="price">4999&nbsp;Ft</span></li><li><span><span lang="hu">Fehérbor, ettől</span></span><span class="price">4995&nbsp;Ft</span></li></ul></div></div></section><div class="menu-foot"><p><span lang="hu">Helyben fogyasztás esetén 10% szervízdíjat, elvitelnél 10% csomagolási díjat számolunk fel. Ha ételallergiája vagy speciális étrendi igénye van, kérjük, jelezze rendeléskor.</span></p>
+    <details><summary><span lang="hu">Allergének listája</span></summary><ol><li><span lang="hu">Glutén</span></li><li><span lang="hu">Rákfélék</span></li><li><span lang="hu">Tojás</span></li><li><span lang="hu">Halak</span></li><li><span lang="hu">Földimogyoró</span></li><li><span lang="hu">Szójabab</span></li><li><span lang="hu">Tej</span></li><li><span lang="hu">Diófélék, mandula</span></li><li><span lang="hu">Zeller</span></li><li><span lang="hu">Mustár</span></li><li><span lang="hu">Szezámmag</span></li><li><span lang="hu">Kén-dioxid és szulfitok</span></li><li><span lang="hu">Csillagfürt</span></li><li><span lang="hu">Puhatestűek</span></li></ol></details></div></div>
+  </section>
+
+  <section class="section reviews" id="reviews">
+    <div class="wrap">
+      <div class="sec-top">
+        <div>
+          <span class="kicker"><span lang="hu">Google-értékelések</span></span>
+          <h2><span lang="hu">756 vendég. <span class="serif">4,9 csillag.</span></span></h2>
+          <p><span lang="hu">Helyiek, diákok és látogatók Londontól New Yorkig. Ezt írták rólunk a Google-on.</span></p>
+        </div>
+        <div class="big-score"><b><span lang="hu">4,9</span></b><span><span class="st" aria-label="4.9 / 5">★★★★★</span><span lang="hu">756 Google-értékelés</span></span></div>
+      </div>
+      <div class="rv">
+        <figure class="lead"><blockquote><span lang="hu">"New York környékéről jövünk, ahol nagy a burgerverseny, a SpiceCube mégis mindent vitt."</span></blockquote><figcaption><span class="st">★★★★★</span> Thanh L. · Google</figcaption></figure>
+        <figure><blockquote><span lang="hu">"Rengeteg indiai éttermet próbáltam Európában. Az itteni ételek eredetisége magasabbra tette a mércét."</span></blockquote><figcaption><span class="st">★★★★★</span> Raghu P. · Google</figcaption></figure>
+      </div>
+    </div>
+    <div class="wall" aria-label="Google reviews">
+      <div class="wall-row" id="wall1"><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„New York környékéről jövünk, ahol nagy a burgerverseny, a SpiceCube mégis mindent vitt. Könnyen az egyik legjobb burger, amit valaha ettem.”</span></p><div class="who"><span class="av">TL</span><span>Thanh L.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Talán a legjobb deep-pan pizza, amit hosszú ideje ettem, nagyon laktató és finom.”</span></p><div class="who"><span class="av">MA</span><span>Malik A.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„A valaha volt legjobb butter chicken. Mindent pontosan olyan csípősre készítettek, ahogy kértem.”</span></p><div class="who"><span class="av">CH</span><span>Craig H.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Rengeteg indiai éttermet próbáltam és értékeltem Európában. Az itteni ételek eredetisége magasabbra tette a mércét az összes többi számára.”</span></p><div class="who"><span class="av">RP</span><span>Raghu P.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Szerintem ez Budapest legjobb pakisztáni pizzázója.”</span></p><div class="who"><span class="av">TR</span><span>Talal R.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Kivételesen jó az étel. Másnap visszajöttünk, annyira finom volt. És a karak chai... hihetetlen!”</span></p><div class="who"><span class="av">RS</span><span>Roland S.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„A biryani egyszerűen fantasztikus volt! Régóta nem ettem ilyen finomat, tele volt ízzel.”</span></p><div class="who"><span class="av">KT</span><span>Kajal T.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Budapesten kevés a halal étel, ezért nagyon örülök, hogy rátaláltam erre a helyre. Az étel csodás, az adagok bőségesek.”</span></p><div class="who"><span class="av">SK</span><span>Suman K.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„A SpiceCube-ban ettem a legjobb és legszívmelengetőbb ételt Budapesten.”</span></p><div class="who"><span class="av">AR</span><span>Adnan R.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„A jalapeño burger messze az egyik legjobb burger, amit utazásaim során valaha ettem.”</span></p><div class="who"><span class="av">SK</span><span>Samia K.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„New York környékéről jövünk, ahol nagy a burgerverseny, a SpiceCube mégis mindent vitt. Könnyen az egyik legjobb burger, amit valaha ettem.”</span></p><div class="who"><span class="av">TL</span><span>Thanh L.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Talán a legjobb deep-pan pizza, amit hosszú ideje ettem, nagyon laktató és finom.”</span></p><div class="who"><span class="av">MA</span><span>Malik A.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„A valaha volt legjobb butter chicken. Mindent pontosan olyan csípősre készítettek, ahogy kértem.”</span></p><div class="who"><span class="av">CH</span><span>Craig H.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Rengeteg indiai éttermet próbáltam és értékeltem Európában. Az itteni ételek eredetisége magasabbra tette a mércét az összes többi számára.”</span></p><div class="who"><span class="av">RP</span><span>Raghu P.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Szerintem ez Budapest legjobb pakisztáni pizzázója.”</span></p><div class="who"><span class="av">TR</span><span>Talal R.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Kivételesen jó az étel. Másnap visszajöttünk, annyira finom volt. És a karak chai... hihetetlen!”</span></p><div class="who"><span class="av">RS</span><span>Roland S.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„A biryani egyszerűen fantasztikus volt! Régóta nem ettem ilyen finomat, tele volt ízzel.”</span></p><div class="who"><span class="av">KT</span><span>Kajal T.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Budapesten kevés a halal étel, ezért nagyon örülök, hogy rátaláltam erre a helyre. Az étel csodás, az adagok bőségesek.”</span></p><div class="who"><span class="av">SK</span><span>Suman K.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„A SpiceCube-ban ettem a legjobb és legszívmelengetőbb ételt Budapesten.”</span></p><div class="who"><span class="av">AR</span><span>Adnan R.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„A jalapeño burger messze az egyik legjobb burger, amit utazásaim során valaha ettem.”</span></p><div class="who"><span class="av">SK</span><span>Samia K.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure></div>
+      <div class="wall-row rev" id="wall2"><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Fantasztikus hely egy régi téglapincében, távol a forgalmas úttól. Sokféle étel, nagyszerű ízek.”</span></p><div class="who"><span class="av">AG</span><span>Anisha G.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Isteni burgerek! A titkos szósz nagyon különleges, egészen más, mint máshol.”</span></p><div class="who"><span class="av">LK</span><span>Laura K.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Csodás hely fantasztikus ételekkel és kiváló kiszolgálással. A személyzet kedves, segítőkész, és nagyon szívesen láttak minket.”</span></p><div class="who"><span class="av">NJ</span><span>Noémi J.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„A legjobb burger, amit valaha ettem. Holnap egyből jövök vissza. Ennyire jó volt.”</span></p><div class="who"><span class="av">HD</span><span>Harrie D.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Életem legjobb pizzája, igazi pakisztáni stílusban, és a peri peri csirke is nagyon finom volt.”</span></p><div class="who"><span class="av">AA</span><span>Ali A.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Rövid budapesti látogatás az Egyesült Királyságból: az egyik legjobb halal étel, amit valaha ettünk.”</span></p><div class="who"><span class="av">MI</span><span>Mazhar I.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Csodás ételek, egyedi konyha és remek kiszolgálás. Nagyon ajánlom a SpiceCube különleges pizzát és a peri peri csirkét!”</span></p><div class="who"><span class="av">IT</span><span>Iva T.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Négyfős családként (3 és 5 éves gyerekekkel) nagyon finomat vacsoráztunk. A pizzák, a burgerek, a lencseleves és a sültkrumpli mind kiválóak voltak!”</span></p><div class="who"><span class="av">AD</span><span>Andrey D.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Csodás ételeket ettem, nagyszerű ízek, nagyon kedves kiszolgálás, és ráadásul jók az árak. A butter chickent és a pizzát különösen ajánlom.”</span></p><div class="who"><span class="av">JC</span><span>Júlia C.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Három napra jöttem Budapestre, és ebből kettőn itt ettem. Az étel nagyon finom.”</span></p><div class="who"><span class="av">FZ</span><span>Farayha Z.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Fantasztikus hely egy régi téglapincében, távol a forgalmas úttól. Sokféle étel, nagyszerű ízek.”</span></p><div class="who"><span class="av">AG</span><span>Anisha G.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Isteni burgerek! A titkos szósz nagyon különleges, egészen más, mint máshol.”</span></p><div class="who"><span class="av">LK</span><span>Laura K.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Csodás hely fantasztikus ételekkel és kiváló kiszolgálással. A személyzet kedves, segítőkész, és nagyon szívesen láttak minket.”</span></p><div class="who"><span class="av">NJ</span><span>Noémi J.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„A legjobb burger, amit valaha ettem. Holnap egyből jövök vissza. Ennyire jó volt.”</span></p><div class="who"><span class="av">HD</span><span>Harrie D.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Életem legjobb pizzája, igazi pakisztáni stílusban, és a peri peri csirke is nagyon finom volt.”</span></p><div class="who"><span class="av">AA</span><span>Ali A.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Rövid budapesti látogatás az Egyesült Királyságból: az egyik legjobb halal étel, amit valaha ettünk.”</span></p><div class="who"><span class="av">MI</span><span>Mazhar I.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Csodás ételek, egyedi konyha és remek kiszolgálás. Nagyon ajánlom a SpiceCube különleges pizzát és a peri peri csirkét!”</span></p><div class="who"><span class="av">IT</span><span>Iva T.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Négyfős családként (3 és 5 éves gyerekekkel) nagyon finomat vacsoráztunk. A pizzák, a burgerek, a lencseleves és a sültkrumpli mind kiválóak voltak!”</span></p><div class="who"><span class="av">AD</span><span>Andrey D.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Csodás ételeket ettem, nagyszerű ízek, nagyon kedves kiszolgálás, és ráadásul jók az árak. A butter chickent és a pizzát különösen ajánlom.”</span></p><div class="who"><span class="av">JC</span><span>Júlia C.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure><figure aria-hidden="true" class="rc" style="margin:0"><span class="st">★★★★★</span><p><span lang="hu">„Három napra jöttem Budapestre, és ebből kettőn itt ettem. Az étel nagyon finom.”</span></p><div class="who"><span class="av">FZ</span><span>Farayha Z.<small>Google <span lang="hu">értékelés</span><span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure></div>
+    </div>
+    <div class="wrap" style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+      <a class="btn btn-white" href="https://search.google.com/local/reviews?placeid=ChIJJZ7T1IzdQUcRq_umouCGos0" target="_blank" rel="noopener"><span lang="hu">Mind a 756 értékelés</span></a>
+      <a class="btn btn-outline-w" href="https://search.google.com/local/writereview?placeid=ChIJJZ7T1IzdQUcRq_umouCGos0" target="_blank" rel="noopener"><span lang="hu">Értékeljen minket</span></a>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="sec-top"><div>
+        <span class="kicker"><span lang="hu">Jó tudni</span></span>
+        <h2><span lang="hu">Gyakori <span class="serif">kérdések</span></span></h2>
+      </div></div>
+      <div class="faq" id="faq-list"><details><summary><span lang="hu">Minden étel halal?</span></summary><p><span lang="hu">Igen. Minden hús, amit főzünk, halal, a csirke és a marha is.</span></p></details><details><summary><span lang="hu">Kérhetem enyhébben vagy csípősebben?</span></summary><p><span lang="hu">Igen. Minden curry, biryani és peri peri étel rendelésre készül, így mondja meg, mennyire szereti csípősen, az enyhétől a nagyon csípősig.</span></p></details><details><summary><span lang="hu">Vannak vegetáriánus ételek?</span></summary><p><span lang="hu">Igen. Spenótos paneer, csicseriborsó curry, dál chawal, zöldséges biryani, öt vegetáriánus pizza, sajtos rudak és sültkrumpli.</span></p></details><details><summary><span lang="hu">Lehet elvitelre rendelni?</span></summary><p><span lang="hu">Igen. Rendeljen a pultnál, vagy hívjon előre a +36 70 426 7923-as számon, és vigye magával. Elvitelnél 10% csomagolási díjat számolunk fel.</span></p></details><details><summary><span lang="hu">Hol vannak és hogyan juthatok el oda?</span></summary><p><span lang="hu">Rózsa utca 39., 1077 Budapest (VII. kerület), pinceszint. Az Oktogon (M1-es metró, 4-es és 6-os villamos) pár perc sétára van.</span></p></details><details><summary><span lang="hu">Mikor vannak nyitva?</span></summary><p><span lang="hu">Hétfőn 17:00 és 23:30 között, keddtől vasárnapig 15:00 és 23:30 között.</span></p></details></div>
+    </div>
+  </section>
+
+  <section class="section" id="visit">
+    <div class="wrap">
+      <div class="sec-top">
+        <div>
+          <span class="kicker"><span lang="hu">Látogasson el</span></span>
+          <h2><span lang="hu">A <span class="serif">Rózsa utcában</span> vagyunk</span></h2>
+        </div>
+      </div>
+      <div class="visit-grid">
+        <div class="panel dark">
+          <p class="addr">Rózsa utca 39<br>1077 Budapest<small><span lang="hu">Pinceszint, pár perc sétára az Oktogontól</span></small></p>
+          <div class="contact">
+            <a href="tel:+36704267923"><span><span lang="hu">Telefon</span></span><span>+36 70 426 7923</span></a>
+            <a href="mailto:info@spicecube.hu"><span>Email</span><span>info@spicecube.hu</span></a>
+          </div>
+          <div class="ctas">
+            <a class="btn btn-white" href="https://www.google.com/maps/dir/?api=1&amp;destination=SpiceCube%2C%20R%C3%B3zsa%20u.%2039%2C%201077%20Budapest&amp;destination_place_id=ChIJJZ7T1IzdQUcRq_umouCGos0" target="_blank" rel="noopener"><span lang="hu">Útvonal</span></a>
+            <a class="btn btn-outline-w" href="https://www.google.com/maps/search/?api=1&amp;query=SpiceCube%20Budapest&amp;query_place_id=ChIJJZ7T1IzdQUcRq_umouCGos0" target="_blank" rel="noopener">Google Maps</a>
+          </div>
+        </div>
+        <div class="panel">
+          <h3><span><span lang="hu">Nyitvatartás</span></span><span class="status" id="status"><span lang="hu">Most nyitva</span></span></h3>
+          <table class="hours" id="hours"><tbody><tr class=""><td><span lang="hu">Hétfő</span></td><td>17:00 – 23:30</td></tr><tr class=""><td><span lang="hu">Kedd</span></td><td>15:00 – 23:30</td></tr><tr class="today"><td><span lang="hu">Szerda</span></td><td>15:00 – 23:30</td></tr><tr class=""><td><span lang="hu">Csütörtök</span></td><td>15:00 – 23:30</td></tr><tr class=""><td><span lang="hu">Péntek</span></td><td>15:00 – 23:30</td></tr><tr class=""><td><span lang="hu">Szombat</span></td><td>15:00 – 23:30</td></tr><tr class=""><td><span lang="hu">Vasárnap</span></td><td>15:00 – 23:30</td></tr></tbody></table>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="logo"><img src="/img/logo.webp" alt="SpiceCube" width="110" height="40" decoding="async"></span>
+    <span>Rózsa u. 39, 1077 Budapest · +36 70 426 7923 · info@spicecube.hu</span>
+    <span>© 2026 SpiceCube</span>
+  </div>
+</footer>
+
+<nav class="appbar" aria-label="Quick actions">
+  <a href="#menu" class="main"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"></path></svg><span lang="hu">Étlap</span></a>
+  <a href="tel:+36704267923"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg><span lang="hu">Hívás</span></a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=SpiceCube%2C%20R%C3%B3zsa%20u.%2039%2C%201077%20Budapest&amp;destination_place_id=ChIJJZ7T1IzdQUcRq_umouCGos0" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-8-8 18-2-8z"></path></svg><span lang="hu">Útvonal</span></a>
+</nav>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"SpiceCube","url":"https://spicecube.hu/","telephone":"+36704267923","email":"info@spicecube.hu","servesCuisine":["Pakistani","Indian","Pizza","Burgers","Halal"],"address":{"@type":"PostalAddress","streetAddress":"Rózsa utca 39","postalCode":"1077","addressLocality":"Budapest","addressCountry":"HU"},"geo":{"@type":"GeoCoordinates","latitude":47.5053759,"longitude":19.0721576},"hasMenu":"https://spicecube.hu/#menu","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"17:00","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"15:00","closes":"23:30"}]}
+</script>
+
+<script>
+/* ===== MENU DATA: edit prices here. p = price in Ft (pizza: [24cm, 26cm, 30cm]). a = allergen numbers. t = tags ===== */
+const MENU = [
+ {id:"starters", en:"Starters & sides", hu:"Előételek és köretek", img:"wings",
+  den:"Soup, cheese sticks, wings and fries.", dhu:"Leves, sajtos rudak, szárnyak és sültkrumpli.",
+  items:[
+   {en:"Garlic Cheese Sticks", hu:"Fokhagymás sajtos rúd", p:1995, t:["new","veg"], a:[1,7],
+    den:"4 freshly baked sticks with garlic butter and melted mozzarella.", dhu:"4 db frissen sült rúd, fokhagymás vajjal és olvasztott mozzarellával."},
+   {en:"Cheese Sticks (2 pcs)", hu:"Sajtos rudak (2 db)", p:1650, t:["veg"], a:[1,7],
+    den:"2 oven-baked cheese sticks with melted mozzarella and seasoning.", dhu:"2 db sütőben sült sajtos rúd, olvadt mozzarellával és fűszerekkel."},
+   {en:"Peri Peri Wings (6 pcs)", hu:"Peri peri szárnyak (6 db)", p:1850, t:["hot"],
+    den:"Six wings marinated in peri peri and grilled.", dhu:"Hat peri peri szószban pácolt, grillezett csirkeszárny."},
+   {en:"Red Lentil Soup", hu:"Vöröslencse leves", p:1250, t:["veg"],
+    den:"A hearty soup of red lentils and spices.", dhu:"Laktató leves vöröslencséből és fűszerekből."},
+   {en:"Masala Fries", hu:"Masala sültkrumpli", p:1450, t:["new","veg","hot"],
+    den:"Spiced fries with a dip of your choice.", dhu:"Fűszeres sültkrumpli, választható mártással."},
+   {en:"Crispy Fries", hu:"Ropogós sültkrumpli", p:1450, t:["veg"],
+    den:"Golden, crisp outside and soft inside.", dhu:"Aranybarna, kívül ropogós, belül puha."},
+   {en:"Crispy Potato Wedges", hu:"Ropogós burgonyagerezd", p:1695, t:["veg"],
+    den:"Seasoned potato wedges, fried until crisp.", dhu:"Fűszerezett, ropogósra sütött burgonyagerezdek."}
+  ]},
+ {id:"pizza", en:"Deep-pan pizza", hu:"Deep-pan pizzák", img:"pizza-pepperoni", pizza:true,
+  den:"A slice of England in Budapest. Three sizes.", dhu:"Egy falat Anglia Budapesten. Három méretben.",
+  items:[
+   {en:"Margherita", hu:"Margherita", p:[2995,3850,4750], t:["veg"], a:[1,7], den:"Mozzarella, tomato and Italian herbs", dhu:"Mozzarella, paradicsom és olasz fűszerek"},
+   {en:"Chicken Corn", hu:"Csirkés kukorica", p:[2995,3495,4495], a:[1,7], den:"Mozzarella, tomato, chicken and sweetcorn", dhu:"Mozzarella, paradicsom, csirke és kukorica"},
+   {en:"Prosciutto", hu:"Prosciutto", p:[2995,3495,4495], a:[1,7], den:"Mozzarella, tomato and ham", dhu:"Mozzarella, paradicsom és sonka"},
+   {en:"Prosciutto Funghi", hu:"Prosciutto gombával", p:[2495,3495,4495], a:[1,7], den:"Mozzarella, tomato, ham and mushrooms", dhu:"Mozzarella, paradicsom, sonka és gomba"},
+   {en:"Hawaiian", hu:"Hawaii", p:[2495,3495,4495], a:[1,7], den:"Mozzarella, tomato, ham and pineapple", dhu:"Mozzarella, paradicsom, sonka és ananász"},
+   {en:"Mafiosa", hu:"Mafiosa", p:[2495,3495,4495], a:[1,7], den:"Mozzarella, tomato and pepperoni", dhu:"Mozzarella, paradicsom és pepperoni"},
+   {en:"Americana", hu:"Amerikai", p:[2495,3495,4495], a:[1,7], den:"Mozzarella, tomato, pepperoni, onions and peppers", dhu:"Mozzarella, paradicsom, pepperoni, hagyma és paprika"},
+   {en:"Mighty Meaty", hu:"Húsimádó", p:[2495,3495,4495], a:[1,7], den:"Mozzarella, tomato, pepperoni, ham, chicken and minced meat", dhu:"Mozzarella, paradicsom, pepperoni, sonka, csirke és darált hús"},
+   {en:"Seafood", hu:"Tenger gyümölcsei", p:[2495,3495,4495], a:[1,2,4,7], den:"Mozzarella, tomato, tuna and prawns", dhu:"Mozzarella, paradicsom, tonhal és garnélarák"},
+   {en:"Pescatori", hu:"Halász", p:[2495,3495,4495], a:[1,2,4,7], den:"Mozzarella, tomato, tuna, prawns and garlic", dhu:"Mozzarella, paradicsom, tonhal, garnélarák és fokhagyma"},
+   {en:"Pollo", hu:"Csirke", p:[2495,3495,4495], a:[1,7], den:"Mozzarella, tomato and chicken", dhu:"Mozzarella, paradicsom és csirke"},
+   {en:"Pollo e Funghi", hu:"Csirke és gomba", p:[2495,3495,4495], a:[1,7], den:"Mozzarella, tomato, chicken and mushrooms", dhu:"Mozzarella, paradicsom, csirke és gomba"},
+   {en:"Cannelloni", hu:"Cannelloni", p:[2495,3495,4495], a:[1,7], den:"Mozzarella, tomato, minced meat and onions", dhu:"Mozzarella, paradicsom, darált hús és hagyma"},
+   {en:"SpiceCube Special", hu:"SpiceCube különlegesség", p:[2495,3495,4495], t:["hot"], a:[1,7], den:"Mozzarella, tomato, chicken, onion, peppers, chillies and sweetcorn", dhu:"Mozzarella, paradicsom, csirke, hagyma, paprika, chili és kukorica"},
+   {en:"Tandoori Special", hu:"Tandoori különlegesség", p:[2495,3495,4495], t:["hot"], a:[1,7], den:"Garlic base, mozzarella, fresh tomato, chicken, peppers, sweetcorn and chilli", dhu:"Fokhagymás alap, mozzarella, friss paradicsom, csirke, paprika, kukorica és chili"},
+   {en:"Vegetarian", hu:"Vegetáriánus", p:[2495,3495,4495], t:["veg"], a:[1,7], den:"Mozzarella, tomato, onions, peppers, sweetcorn and mushrooms", dhu:"Mozzarella, paradicsom, hagyma, paprika, kukorica és gomba"},
+   {en:"Funghi", hu:"Gomba", p:[2495,3495,4495], t:["veg"], a:[1,7], den:"Mozzarella, tomato and mushrooms", dhu:"Mozzarella, paradicsom és gomba"},
+   {en:"Garlic Bread", hu:"Fokhagymás kenyér", p:[2495,3495,4495], t:["veg"], a:[1,7], den:"Freshly baked with garlic butter and mozzarella", dhu:"Frissen sütve, fokhagymás vajjal és mozzarellával"}
+  ]},
+ {id:"burgers", en:"Smash burgers", hu:"Smash burgerek", img:"burger",
+  den:"Homemade buns and our secret sauce.", dhu:"Házi zsemle és titkos szószunk.",
+  note:{en:"Make it a meal with fries and a drink for +1 450 Ft.", hu:"Sültkrumplival és itallal menü: +1 450 Ft."},
+  items:[
+   {en:"Tax Smash Hamburger", hu:"Tax Smash hamburger", p:2995, den:"Juicy beef patty on a freshly baked bun with our special sauce and cheese.", dhu:"Szaftos marhahúspogácsa frissen sült zsemlében, speciális szószunkkal és sajttal."},
+   {en:"Tax Smash Cheese Burger", hu:"Tax Smash sajtburger", p:2995, den:"Smashed beef patty with cheese, special sauce, pickles and baked onion.", dhu:"Marhahúspogácsa sajttal, speciális szószunkkal, savanyúsággal és sült hagymával."},
+   {en:"Tax Beef Smash Burger", hu:"Tax marhahúsos smash burger", p:2995, t:["hot"], den:"Beef patty with green chilli, cheese, special sauce and pickles.", dhu:"Marhahúspogácsa zöld chilivel, sajttal, speciális szószunkkal és savanyúsággal."},
+   {en:"Tax Smash Hawaiian Burger", hu:"Tax Smash hawaii burger", p:3295, den:"Smashed beef patty with cheese, special sauce, pickles and a slice of pineapple.", dhu:"Marhahúspogácsa sajttal, speciális szószunkkal, savanyúsággal és ananászszelettel."},
+   {en:"Tax Smash Jalapeño Burger", hu:"Tax Smash jalapeño burger", p:3295, t:["hot"], den:"Beef patty with special sauce, cheese, pickles and jalapeños.", dhu:"Marhahúspogácsa speciális szószunkkal, sajttal, savanyúsággal és jalapeñóval."},
+   {en:"Tax Double Smash Cheese Burger", hu:"Tax dupla smash sajtburger", p:3995, den:"Two beef patties with cheese, special sauce and pickles.", dhu:"Dupla marhahúspogácsa sajttal, speciális szószunkkal és savanyúsággal."},
+   {en:"Tax Smash BBQ Burger", hu:"Tax Smash BBQ burger", p:3995, den:"Two beef patties, double cheddar, BBQ sauce, crispy onion and lettuce.", dhu:"Dupla marhahúspogácsa, dupla cheddar, BBQ szósz, ropogós hagyma és saláta."}
+  ]},
+ {id:"peri", en:"Peri peri chicken", hu:"Peri peri csirke", img:"peri-chicken",
+  den:"Marinated in peri peri and slow-grilled.", dhu:"Peri peri szószban pácolva, lassan grillezve.",
+  items:[
+   {en:"Quarter Peri Peri Chicken", hu:"Negyed peri peri csirke", p:2295, t:["hot"], den:"A quarter chicken marinated and slow-grilled in peri peri sauce.", dhu:"Negyed csirke peri peri szószban pácolva és grillezve."},
+   {en:"Half Peri Peri Chicken", hu:"Fél peri peri csirke", p:4595, t:["hot"], den:"Half a chicken marinated and slow-grilled in peri peri sauce.", dhu:"Fél csirke peri peri szószban pácolva és grillezve."},
+   {en:"Whole Peri Peri Chicken", hu:"Egész peri peri csirke", p:7995, t:["hot"], den:"A whole chicken marinated and slow-grilled in peri peri sauce.", dhu:"Egész csirke peri peri szószban pácolva és grillezve."}
+  ]},
+ {id:"curries", en:"Curries & biryani", hu:"Curryk és biryani", img:"curry-tray",
+  den:"Pakistani and Indian classics. Beef dishes come with basmati rice or fresh paratha.", dhu:"Pakisztáni és indiai klasszikusok. A marhás ételekhez basmati rizs vagy friss paratha jár.",
+  items:[
+   {en:"Chicken Biryani", hu:"Csirke biryani", p:2995, den:"Spiced chicken layered with fragrant basmati rice, slow-cooked with herbs and aromatic spices.", dhu:"Fűszeres csirke illatos basmati rizzsel rétegezve, lassan főzve gyógynövényekkel és aromás fűszerekkel."},
+   {en:"Butter Chicken with Basmati Rice", hu:"Vajas csirke basmati rizzsel", p:2995, den:"Marinated chicken in a creamy, buttery tomato sauce. One of the most loved Indian dishes.", dhu:"Pácolt csirkedarabok lágy, krémes paradicsomos vajszószban. Az egyik legnépszerűbb indiai fogás."},
+   {en:"Chicken Tikka Masala with Basmati Rice", hu:"Csirke tikka masala basmati rizzsel", p:2995, den:"Tender chicken breast in a spiced tomato and cream sauce. A true classic.", dhu:"Pácolt csirkemell fűszeres paradicsomos-tejszínes szószban. Igazi klasszikus."},
+   {en:"Chicken Curry with Basmati Rice", hu:"Csirke curry basmati rizzsel", p:2995, den:"Chicken pieces cooked in a home-style spiced curry sauce.", dhu:"Csirkedarabok házias, fűszeres curry szószban főzve."},
+   {en:"Keema Matar with Basmati Rice", hu:"Keema matar basmati rizzsel", p:3995, den:"Minced meat cooked with green peas, onions, tomatoes and traditional spices.", dhu:"Darált hús zöldborsóval, hagymával, paradicsommal és hagyományos fűszerekkel főzve."},
+   {en:"Beef Tikka Masala", hu:"Marha tikka masala", p:3995, den:"Tender beef in a rich, spiced tomato and cream sauce, with basmati rice or paratha.", dhu:"Omlós marhahús fűszeres paradicsomos-tejszínes szószban, basmati rizzsel vagy parathával."},
+   {en:"Beef Curry", hu:"Marha curry", p:3995, den:"Beef simmered in an aromatic curry sauce, with basmati rice or buttered paratha. Spicy and filling.", dhu:"Aromás curry szószban párolt marhahús, basmati rizzsel vagy vajas parathával. Fűszeres és laktató."},
+   {en:"Butter Beef", hu:"Vajas marha", p:3995, den:"Beef in a creamy, buttery tomato sauce, with basmati rice or paratha.", dhu:"Marhahús lágy, krémes paradicsomos vajszószban, basmati rizzsel vagy parathával."}
+  ]},
+ {id:"spinach", en:"Spinach specials", hu:"Spenótos ételek", img:null, glyph:"Palak",
+  den:"Palak dishes: spinach slow-cooked with spices.", dhu:"Palak ételek: fűszerekkel lassan főtt spenót.",
+  items:[
+   {en:"Palak Paneer", hu:"Spenótos paneer", p:2995, t:["veg"], a:[7], den:"Spinach cooked with paneer cheese in aromatic spices.", dhu:"Indiai spenótos étel házi sajttal, fűszeres mártásban."},
+   {en:"Palak Chicken", hu:"Spenótos csirke", p:3295, den:"Spinach cooked with tender chicken in aromatic spices.", dhu:"Spenót fűszeres csirkehússal."},
+   {en:"Palak Chana", hu:"Spenótos csicseriborsó", p:3295, t:["veg"], den:"Spinach cooked with chickpeas in aromatic spices.", dhu:"Spenót csicseriborsóval, aromás fűszerekkel."},
+   {en:"Palak Beef", hu:"Spenótos marhahús", p:4295, den:"Spinach cooked with tender beef in aromatic spices.", dhu:"Spenót fűszeres marhahússal."}
+  ]},
+ {id:"rice", en:"Rice dishes", hu:"Rizses ételek", img:null, glyph:"Rice",
+  den:"Basmati, stir-fried to order.", dhu:"Basmati rizs, rendelésre pirítva.",
+  items:[
+   {en:"Egg Fried Rice", hu:"Tojásos sült rizs", p:2995, t:["veg"], a:[3], den:"Fragrant basmati stir-fried with egg, vegetables and spices.", dhu:"Illatos basmati rizs tojással, zöldségekkel és fűszerekkel pirítva."},
+   {en:"Chicken Fried Rice", hu:"Csirkés sült rizs", p:2995, den:"Basmati stir-fried with chicken, vegetables and spices.", dhu:"Basmati rizs csirkével, zöldségekkel és fűszerekkel pirítva."},
+   {en:"Vegetable Fried Rice", hu:"Zöldséges sült rizs", p:2995, t:["veg"], den:"Fragrant basmati cooked with spiced vegetables.", dhu:"Illatos basmati rizs fűszeres zöldségekkel."},
+   {en:"Beef Mince Fried Rice", hu:"Darált marhás sült rizs", p:3995, den:"Basmati stir-fried with minced beef, vegetables and spices.", dhu:"Basmati rizs darált marhahússal, zöldségekkel és fűszerekkel pirítva."}
+  ]},
+ {id:"veg", en:"Vegetarian", hu:"Vegetáriánus ételek", img:null, glyph:"Veg",
+  den:"All served with basmati rice.", dhu:"Mindegyik basmati rizzsel.",
+  items:[
+   {en:"Vegetable Curry", hu:"Zöldség curry", p:2995, t:["veg"], den:"Spiced mixed vegetables in a flavourful curry.", dhu:"Fűszeres vegyes zöldségek ízletes curry szószban."},
+   {en:"Chickpea Curry", hu:"Csicseriborsó curry", p:2995, t:["veg"], den:"Hearty chickpeas in a rich, spiced gravy.", dhu:"Tápláló csicseriborsó gazdag, fűszeres szószban."},
+   {en:"Dal Chawal", hu:"Dál chawal (lencse rizzsel)", p:2995, t:["veg"], den:"Traditional lentils cooked with aromatic spices.", dhu:"Hagyományos lencse aromás fűszerekkel főzve."},
+   {en:"Vegetable Biryani", hu:"Zöldséges biryani", p:2995, t:["veg"], den:"Fragrant basmati cooked with spiced vegetables.", dhu:"Illatos basmati rizs fűszeres zöldségekkel főzve."}
+  ]}
+];
+const DRINKS = {id:"drinks", en:"Drinks", hu:"Italok", glyph:"Chai", den:"Karak chai is brewed slowly with milk and loose tea.", dhu:"A karak chai tejjel és tealevelekkel, lassan fő.",
+ groups:[
+  {en:"Tea & lassi", hu:"Tea és lassi", rows:[["Karak Chai","Karak tea",795],["Mango Lassi","Mangó lassi",995]]},
+  {en:"Soft drinks", hu:"Üdítők", rows:[["Pepsi (can)","Pepsi (dobozos)",695],["Coca-Cola (can)","Coca-Cola (dobozos)",695],["Lemonade","Limonádé",799],["Kids' juice","Gyerek gyümölcslé",499],["Water, still or sparkling","Víz, mentes vagy szénsavas",450]]},
+  {en:"Beer (can)", hu:"Sör (dobozos)", rows:[["Argus, Carlsberg, Stella Artois, Borsodi","Argus, Carlsberg, Stella Artois, Borsodi",995],["Alcohol-free beers","Alkoholmentes sörök",895]]},
+  {en:"Wine", hu:"Bor", rows:[["Red wine, from","Vörösbor, ettől",4999],["White wine, from","Fehérbor, ettől",4995]]}
+ ]};
+const ALLERGENS=[["Glutén","Gluten"],["Rákfélék","Crustaceans"],["Tojás","Eggs"],["Halak","Fish"],["Földimogyoró","Peanuts"],["Szójabab","Soybeans"],["Tej","Milk"],["Diófélék, mandula","Nuts"],["Zeller","Celery"],["Mustár","Mustard"],["Szezámmag","Sesame"],["Kén-dioxid és szulfitok","Sulphites"],["Csillagfürt","Lupin"],["Puhatestűek","Molluscs"]];
+const HOURS=[ // 0=Sunday
+ ["Vasárnap","Sunday","15:00","23:30"],["Hétfő","Monday","17:00","23:30"],["Kedd","Tuesday","15:00","23:30"],["Szerda","Wednesday","15:00","23:30"],["Csütörtök","Thursday","15:00","23:30"],["Péntek","Friday","15:00","23:30"],["Szombat","Saturday","15:00","23:30"]];
+
+
+/* ===== GOOGLE REVIEWS (excerpts, original English + Hungarian translation) ===== */
+const REVIEWS = [
+ ["Thanh L.","Coming from the New York City area where the burger battle scene is highly competitive - SpiceCube knocked it out of the park. Easily one of the best burgers I've ever tasted.","New York környékéről jövünk, ahol nagy a burgerverseny, a SpiceCube mégis mindent vitt. Könnyen az egyik legjobb burger, amit valaha ettem."],
+ ["Malik A.","Possibly one of the best deep pan Pizza I've ate in a long time, very filling and tasty.","Talán a legjobb deep-pan pizza, amit hosszú ideje ettem, nagyon laktató és finom."],
+ ["Craig H.","Best Butter Chicken ever. Everything was custom made perfectly just how I described in terms of spiciness.","A valaha volt legjobb butter chicken. Mindent pontosan olyan csípősre készítettek, ahogy kértem."],
+ ["Raghu P.","I have tried and reviewed many Indian restaurants in Europe. The authenticity of the Indian food served in this restaurant definitely raised my bar for the remaining restaurants in Europe.","Rengeteg indiai éttermet próbáltam és értékeltem Európában. Az itteni ételek eredetisége magasabbra tette a mércét az összes többi számára."],
+ ["Talal R.","I would say it is the best Pakistani pizza shop in Budapest.","Szerintem ez Budapest legjobb pakisztáni pizzázója."],
+ ["Roland S.","The food is exceptionally good. We came back the next day again because the food was so amazing. And the Karak Chai... OMG!","Kivételesen jó az étel. Másnap visszajöttünk, annyira finom volt. És a karak chai... hihetetlen!"],
+ ["Kajal T.","The biryani was absolutely awesome! I had such a delicious biryani after a long time, and it was full of flavour.","A biryani egyszerűen fantasztikus volt! Régóta nem ettem ilyen finomat, tele volt ízzel."],
+ ["Suman K.","There isn't a lot of halal food in Budapest but I'm so glad I've come across this place. The food is amazing! The portion sizes are great.","Budapesten kevés a halal étel, ezért nagyon örülök, hogy rátaláltam erre a helyre. Az étel csodás, az adagok bőségesek."],
+ ["Adnan R.","SpiceCube served the best and most heartwarming meal I had in Budapest.","A SpiceCube-ban ettem a legjobb és legszívmelengetőbb ételt Budapesten."],
+ ["Samia K.","The Jalapeño burger is by far one of the best burgers I've had in this world in all my travels.","A jalapeño burger messze az egyik legjobb burger, amit utazásaim során valaha ettem."],
+ ["Anisha G.","Fantastic setting, within an old brick cave away from the busy road. Plenty of food options with great flavours.","Fantasztikus hely egy régi téglapincében, távol a forgalmas úttól. Sokféle étel, nagyszerű ízek."],
+ ["Laura K.","The burgers are delicious! The secret sauce is very special and unique, unlike most places.","Isteni burgerek! A titkos szósz nagyon különleges, egészen más, mint máshol."],
+ ["Noémi J.","Amazing place with fantastic food and outstanding service. The staff was kind, helpful, and made us feel very welcome.","Csodás hely fantasztikus ételekkel és kiváló kiszolgálással. A személyzet kedves, segítőkész, és nagyon szívesen láttak minket."],
+ ["Harrie D.","Best burger I've ever had. Going straight back tomorrow. It was that good","A legjobb burger, amit valaha ettem. Holnap egyből jövök vissza. Ennyire jó volt."],
+ ["Ali A.","Best pizza of my life full Pakistani style and peri peri chicken was also so delicious.","Életem legjobb pizzája, igazi pakisztáni stílusban, és a peri peri csirke is nagyon finom volt."],
+ ["Mazhar I.","Short visit to Budapest from United Kingdom some of the best Halal food we have had.","Rövid budapesti látogatás az Egyesült Királyságból: az egyik legjobb halal étel, amit valaha ettünk."],
+ ["Iva T.","Amazing food, unique cuisine and an amazing service. A big recommendation for the Spice Cube Special Pizza and Peri Peri chicken!","Csodás ételek, egyedi konyha és remek kiszolgálás. Nagyon ajánlom a SpiceCube különleges pizzát és a peri peri csirkét!"],
+ ["Andrey D.","We had a super tasty dinner as a family of four (two kids - 3 and 5). The pizzas, burgers, lentil soup, and fries were all amazing!","Négyfős családként (3 és 5 éves gyerekekkel) nagyon finomat vacsoráztunk. A pizzák, a burgerek, a lencseleves és a sültkrumpli mind kiválóak voltak!"],
+ ["Júlia C.","I had amaizing food here, great flavours, very kind service and on top of that - good prices. I really recommend the butter chicken and the pizza.","Csodás ételeket ettem, nagyszerű ízek, nagyon kedves kiszolgálás, és ráadásul jók az árak. A butter chickent és a pizzát különösen ajánlom."],
+ ["Farayha Z.","I came to budapest for 3 days and 2 days i ate from here. Food is super delicious.","Három napra jöttem Budapestre, és ebből kettőn itt ettem. Az étel nagyon finom."]
+];
+const HERO_QUOTE = ["The BEST smashed burgers in Budapest.","Budapest LEGJOBB smash burgerei."];
+
+const FAQ = [
+ ["Is all the food halal?","Minden étel halal?","Yes. All the meat we cook is halal, chicken and beef alike.","Igen. Minden hús, amit főzünk, halal, a csirke és a marha is."],
+ ["Can I choose how spicy my food is?","Kérhetem enyhébben vagy csípősebben?","Yes. Every curry, biryani and peri peri dish is cooked to order, so tell us how hot you like it, from mild to very spicy.","Igen. Minden curry, biryani és peri peri étel rendelésre készül, így mondja meg, mennyire szereti csípősen, az enyhétől a nagyon csípősig."],
+ ["Do you have vegetarian dishes?","Vannak vegetáriánus ételek?","Yes. Palak paneer, chickpea curry, dal chawal, vegetable biryani, five vegetarian pizzas, cheese sticks and fries.","Igen. Spenótos paneer, csicseriborsó curry, dál chawal, zöldséges biryani, öt vegetáriánus pizza, sajtos rudak és sültkrumpli."],
+ ["Can I take food away?","Lehet elvitelre rendelni?","Yes. Order at the counter, or call ahead on +36 70 426 7923 and collect. A 10% packaging charge applies to takeaway.","Igen. Rendeljen a pultnál, vagy hívjon előre a +36 70 426 7923-as számon, és vigye magával. Elvitelnél 10% csomagolási díjat számolunk fel."],
+ ["Where are you and how do I get there?","Hol vannak és hogyan juthatok el oda?","Rózsa utca 39, 1077 Budapest (District VII), on the lower floor. Oktogon (M1 metro, trams 4 and 6) is a short walk away.","Rózsa utca 39., 1077 Budapest (VII. kerület), pinceszint. Az Oktogon (M1-es metró, 4-es és 6-os villamos) pár perc sétára van."],
+ ["What are your opening hours?","Mikor vannak nyitva?","Monday 17:00 to 23:30, Tuesday to Sunday 15:00 to 23:30.","Hétfőn 17:00 és 23:30 között, keddtől vasárnapig 15:00 és 23:30 között."]
+];
+/* ===== PHOTOS: dish name (English) -> image file. Add a line here when new photos arrive. ===== */
+const PHOTOS = {
+  "Garlic Cheese Sticks":"garlic-sticks","Cheese Sticks (2 pcs)":"cheese-sticks-2","Peri Peri Wings (6 pcs)":"wings-plate","Red Lentil Soup":"soup",
+  "Masala Fries":"fries-3","Crispy Fries":"fries-1","Crispy Potato Wedges":"fries-2",
+  "Margherita":"pizza-check","Chicken Corn":"pizza-chicken-corn","Prosciutto":"pizza-17","Prosciutto Funghi":"pizza-twin-a","Hawaiian":"pizza-box",
+  "Mafiosa":"pizza-close","Americana":"pizza-pair-b","Mighty Meaty":"pizza-slice","Seafood":"pizza-pair","Pescatori":"pizza-twin",
+  "Pollo":"pizza-17","Pollo e Funghi":"pizza-check","Cannelloni":"pizza-slice","SpiceCube Special":"pizza-special","Tandoori Special":"pizza-jalapeno-box",
+  "Vegetarian":"pizza-top","Funghi":"pizza-close","Garlic Bread":"pizza-jalapeno",
+  "Tax Smash Hamburger":"burger-classic","Tax Smash Cheese Burger":"burger-cheese","Tax Beef Smash Burger":"burger-chilli","Tax Smash Hawaiian Burger":"burger-pickle",
+  "Tax Smash Jalapeño Burger":"burger-jalapeno","Tax Double Smash Cheese Burger":"burger-check","Tax Smash BBQ Burger":"burger-platter-2",
+  "Quarter Peri Peri Chicken":"peri-quarter","Half Peri Peri Chicken":"peri-rice","Whole Peri Peri Chicken":"peri-box",
+  "Chicken Biryani":"fried-rice","Butter Chicken with Basmati Rice":"curry-new","Chicken Tikka Masala with Basmati Rice":"curry-new-2",
+  "Chicken Curry with Basmati Rice":"curry-pan","Keema Matar with Basmati Rice":"keema","Beef Tikka Masala":"curry-new-3","Beef Curry":"keema-2","Butter Beef":"curry-new-4",
+  "Palak Paneer":"palak-2","Palak Chicken":"palak","Palak Chana":"palak-3","Palak Beef":"palak-4",
+  "Egg Fried Rice":"rice-green","Chicken Fried Rice":"fried-rice-2","Vegetable Fried Rice":"veg-rice","Beef Mince Fried Rice":"rice-green-2",
+  "Vegetable Curry":"curry-pan","Chickpea Curry":"curry-new-3","Dal Chawal":"curry-new-2","Vegetable Biryani":"fried-rice-2"
+};
+const FEATURE = {starters:"Peri Peri Wings (6 pcs)", pizza:"SpiceCube Special", burgers:"Tax Double Smash Cheese Burger", peri:"Half Peri Peri Chicken", curries:"Butter Chicken with Basmati Rice", spinach:"Palak Chicken", rice:"Egg Fried Rice"};
+const RAIL = [["burger-platter","Burger, wings & fries","Burger, szárnyak, sültkrumpli"],["curry-new","Butter chicken","Vajas csirke"],["pizza-jalapeno-box","Tandoori Special","Tandoori különlegesség"],["burger-check","Double smash","Dupla smash"],["palak","Palak chicken","Spenótos csirke"],["peri-rice","Peri peri chicken","Peri peri csirke"],["pizza-top","Deep-pan pizza","Deep-pan pizza"],["keema","Keema matar","Keema matar"],["rice-green","Egg fried rice","Tojásos sült rizs"],["wings-fries","Wings & masala fries","Szárnyak, masala krumpli"],["burger-chilli","Green chilli smash","Zöld chilis smash"],["burger-line","Fresh off the grill","Frissen a grillről"],["pizza-close","Loaded to the edge","Szélig megrakva"]];
+
+/* ===== rendering ===== */
+const ft = n => n.toLocaleString("hu-HU").replace(/\s/g," ") + " Ft";
+const both = (en,hu) => `<span lang="en">${en}</span><span lang="hu">${hu}</span>`;
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
+const TAGS = {new:["New","Új"], veg:["Vegetarian","Vegetáriánus"], hot:["Spicy","Csípős"]};
+function marks(it){
+  const t=(it.t||[]).map(k=>`<span class="mk ${k}">${both(...TAGS[k])}</span>`).join("");
+  const a=it.a&&it.a.length?`<span class="alg">${both("Allergens","Allergének")}: ${it.a.join(", ")}</span>`:"";
+  return `<div class="marks">${t}${a}</div>`;
+}
+const alt = it => it.hu.toLowerCase()===it.en.toLowerCase()?"":`<span class="alt">${both(esc(it.hu),esc(it.en))}</span>`;
+function priceHtml(it){
+  if(Array.isArray(it.p)) return `<div class="sizes">${it.p.map((v,i)=>`<span class="size"><small>${["24 cm","26 cm","30 cm"][i]}</small><span class="price">${ft(v)}</span></span>`).join("")}</div>`;
+  return `<span class="price">${ft(it.p)}</span>`;
+}
+function card(it,feature){
+  const ph=PHOTOS[it.en];
+  const stack=!!ph;
+  const thumb=ph?`<div class="thumb"><img src="/img/${ph}.webp" alt="${esc(it.en)}" decoding="async"></div>`:"";
+  const body=`<div class="card-body"><h4>${both(esc(it.en),esc(it.hu))}</h4>${alt(it)}<p class="desc">${both(esc(it.den),esc(it.dhu))}</p><div class="foot">${priceHtml(it)}</div>${marks(it)}</div>`;
+  return feature&&ph?`<article class="card feature">${thumb}${body}</article>`:stack?`<article class="card stack">${thumb}${body}</article>`:`<article class="card">${body}${thumb}</article>`;
+}
+function render(){
+  const body=document.getElementById("menu-body"), cats=document.getElementById("cats");
+  let h="", n="";
+  for(const c of MENU){
+    n+=`<a href="#${c.id}" data-id="${c.id}">${both(c.en,c.hu)}</a>`;
+    const f=FEATURE[c.id];
+    const items=f?[...c.items.filter(i=>i.en===f),...c.items.filter(i=>i.en!==f)]:c.items;
+    h+=`<section class="cat" id="${c.id}"><div class="cat-top"><div><h3>${both(c.en,c.hu)}</h3><p>${both(c.den,c.dhu)}</p></div></div>${c.note?`<p class="cat-note">${both(c.note.en,c.note.hu)}</p>`:""}<div class="cards">${items.map(i=>card(i,i.en===f)).join("")}</div></section>`;
+  }
+  const d=DRINKS;
+  n+=`<a href="#drinks" data-id="drinks">${both(d.en,d.hu)}</a>`;
+  h+=`<section class="cat" id="drinks"><div class="cat-top"><div><h3>${both(d.en,d.hu)}</h3><p>${both(d.den,d.dhu)}</p></div></div><div class="drinks">${d.groups.map(g=>`<div><h4>${both(g.en,g.hu)}</h4><ul>${g.rows.map(r=>`<li><span>${both(r[0],r[1])}</span><span class="price">${ft(r[2])}</span></li>`).join("")}</ul></div>`).join("")}</div></section>`;
+  h+=`<div class="menu-foot"><p>${both("A 10% service charge applies to dine-in orders and a 10% packaging charge to takeaway. If you have a food allergy or dietary need, please tell us when you order.","Helyben fogyasztás esetén 10% szervízdíjat, elvitelnél 10% csomagolási díjat számolunk fel. Ha ételallergiája vagy speciális étrendi igénye van, kérjük, jelezze rendeléskor.")}</p>
+    <details><summary>${both("Allergen key","Allergének listája")}</summary><ol>${ALLERGENS.map(x=>`<li>${both(x[1],x[0])}</li>`).join("")}</ol></details></div>`;
+  body.innerHTML=h; cats.innerHTML=n;
+  initMenuNav();
+  const rail=RAIL.map(r=>`<figure><img src="/img/${r[0]}.webp" alt="" decoding="async"><figcaption>${both(r[1],r[2])}</figcaption></figure>`).join("");
+  document.getElementById("rail").innerHTML=rail+rail.replace(/<figure>/g,'<figure aria-hidden="true">');
+}
+function initMenuNav(){
+  const cats=document.getElementById("cats");
+  const links=[...cats.querySelectorAll("a")];
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle("on",l.dataset.id===e.target.id));const on=cats.querySelector(".on");if(on)cats.scrollTo({left:on.offsetLeft-20,behavior:"smooth"});}})},{rootMargin:"-35% 0px -55% 0px"});
+  document.querySelectorAll(".cat").forEach(s=>io.observe(s));
+}
+function renderExtras(){
+  const initials=n=>n.split(/\s+/).map(w=>w[0]).join("").slice(0,2).toUpperCase();
+  const rc=r=>`<figure class="rc" style="margin:0"><span class="st">★★★★★</span><p>${both("“"+esc(r[1])+"”","„"+esc(r[2])+"”")}</p><div class="who"><span class="av">${initials(r[0])}</span><span>${esc(r[0])}<small>Google ${both("review","értékelés")}<span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure>`;
+  const half=Math.ceil(REVIEWS.length/2);
+  const r1=REVIEWS.slice(0,half).map(rc).join(""), r2=REVIEWS.slice(half).map(rc).join("");
+  document.getElementById("wall1").innerHTML=r1+r1.replace(/<figure /g,'<figure aria-hidden="true" ');
+  document.getElementById("wall2").innerHTML=r2+r2.replace(/<figure /g,'<figure aria-hidden="true" ');
+  document.getElementById("hq").innerHTML=both("“"+HERO_QUOTE[0]+"”","„"+HERO_QUOTE[1]+"”")+`<small>${both("Google review","Google-értékelés")}</small>`;
+  document.getElementById("faq-list").innerHTML=FAQ.map(f=>`<details><summary>${both(f[0],f[1])}</summary><p>${both(f[2],f[3])}</p></details>`).join("");
+}
+function renderHours(){
+  const now=new Date(new Date().toLocaleString("en-US",{timeZone:"Europe/Budapest"}));
+  const today=now.getDay();
+  document.getElementById("hours").innerHTML=[1,2,3,4,5,6,0].map(i=>{const r=HOURS[i];return `<tr class="${i===today?"today":""}"><td>${both(r[1],r[0])}</td><td>${r[2]} – ${r[3]}</td></tr>`}).join("");
+  const r=HOURS[today], m=now.getHours()*60+now.getMinutes(), toM=s=>{const[a,b]=s.split(":");return +a*60+ +b};
+  const open=m>=toM(r[2])&&m<toM(r[3]), before=m<toM(r[2]);
+  const label=open?both("Open now","Most nyitva"):both("Closed now","Most zárva");
+  const sub=open?both("Until "+r[3]+" tonight","Ma "+r[3]+"-ig"):before?both("Opens today at "+r[2],"Ma "+r[2]+"-kor nyit"):both("Opens tomorrow at "+HOURS[(today+1)%7][2],"Holnap "+HOURS[(today+1)%7][2]+"-kor nyit");
+  document.getElementById("status").innerHTML=label;
+  document.getElementById("hero-status").innerHTML=`<div class="${open?"":"closed"}"><span class="dot"></span><b>${label}</b><small>${sub}</small></div>`;
+}
+function setLang(l){
+  document.documentElement.dataset.lang=l; document.documentElement.lang=l;
+  document.querySelectorAll(".seg button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.set===l)));
+  try{localStorage.setItem("sc-lang",l)}catch(e){}
+}
+let start=document.documentElement.dataset.fixed||"hu";
+if(!document.documentElement.dataset.fixed){try{start=localStorage.getItem("sc-lang")||"hu"}catch(e){}}
+setLang(start);
+document.querySelectorAll(".seg button").forEach(b=>b.addEventListener("click",()=>{ if(document.documentElement.dataset.fixed){location.href=b.dataset.set==="en"?"/en/":"/";} else setLang(b.dataset.set);}));
+if(!document.documentElement.dataset.fixed){render(); renderExtras();} else {initMenuNav();}
+renderHours();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Menu","name":"SpiceCube","inLanguage":"hu","hasMenuSection":[{"@type":"MenuSection","name":"Előételek és köretek","hasMenuItem":[{"@type":"MenuItem","name":"Fokhagymás sajtos rúd","description":"4 db frissen sült rúd, fokhagymás vajjal és olvasztott mozzarellával.","offers":{"@type":"Offer","price":"1995","priceCurrency":"HUF"},"suitableForDiet":"https://schema.org/VegetarianDiet"},{"@type":"MenuItem","name":"Sajtos rudak (2 db)","description":"2 db sütőben sült sajtos rúd, olvadt mozzarellával és fűszerekkel.","offers":{"@type":"Offer","price":"1650","priceCurrency":"HUF"},"suitableForDiet":"https://schema.org/VegetarianDiet"},{"@type":"MenuItem","name":"Peri peri szárnyak (6 db)","description":"Hat peri peri szószban pácolt, grillezett csirkeszárny.","offers":{"@type":"Offer","price":"1850","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Vöröslencse leves","description":"Laktató leves vöröslencséből és fűszerekből.","offers":{"@type":"Offer","price":"1250","priceCurrency":"HUF"},"suitableForDiet":"https://schema.org/VegetarianDiet"},{"@type":"MenuItem","name":"Masala sültkrumpli","description":"Fűszeres sültkrumpli, választható mártással.","offers":{"@type":"Offer","price":"1450","priceCurrency":"HUF"},"suitableForDiet":"https://schema.org/VegetarianDiet"},{"@type":"MenuItem","name":"Ropogós sültkrumpli","description":"Aranybarna, kívül ropogós, belül puha.","offers":{"@type":"Offer","price":"1450","priceCurrency":"HUF"},"suitableForDiet":"https://schema.org/VegetarianDiet"},{"@type":"MenuItem","name":"Ropogós burgonyagerezd","description":"Fűszerezett, ropogósra sütött burgonyagerezdek.","offers":{"@type":"Offer","price":"1695","priceCurrency":"HUF"},"suitableForDiet":"https://schema.org/VegetarianDiet"}]},{"@type":"MenuSection","name":"Deep-pan pizzák","hasMenuItem":[{"@type":"MenuItem","name":"Margherita","description":"Mozzarella, paradicsom és olasz fűszerek","offers":[{"@type":"Offer","price":"2995","priceCurrency":"HUF"},{"@type":"Offer","price":"3850","priceCurrency":"HUF"},{"@type":"Offer","price":"4750","priceCurrency":"HUF"}],"suitableForDiet":"https://schema.org/VegetarianDiet"},{"@type":"MenuItem","name":"Csirkés kukorica","description":"Mozzarella, paradicsom, csirke és kukorica","offers":[{"@type":"Offer","price":"2995","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}]},{"@type":"MenuItem","name":"Prosciutto","description":"Mozzarella, paradicsom és sonka","offers":[{"@type":"Offer","price":"2995","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}]},{"@type":"MenuItem","name":"Prosciutto gombával","description":"Mozzarella, paradicsom, sonka és gomba","offers":[{"@type":"Offer","price":"2495","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}]},{"@type":"MenuItem","name":"Hawaii","description":"Mozzarella, paradicsom, sonka és ananász","offers":[{"@type":"Offer","price":"2495","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}]},{"@type":"MenuItem","name":"Mafiosa","description":"Mozzarella, paradicsom és pepperoni","offers":[{"@type":"Offer","price":"2495","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}]},{"@type":"MenuItem","name":"Amerikai","description":"Mozzarella, paradicsom, pepperoni, hagyma és paprika","offers":[{"@type":"Offer","price":"2495","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}]},{"@type":"MenuItem","name":"Húsimádó","description":"Mozzarella, paradicsom, pepperoni, sonka, csirke és darált hús","offers":[{"@type":"Offer","price":"2495","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}]},{"@type":"MenuItem","name":"Tenger gyümölcsei","description":"Mozzarella, paradicsom, tonhal és garnélarák","offers":[{"@type":"Offer","price":"2495","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}]},{"@type":"MenuItem","name":"Halász","description":"Mozzarella, paradicsom, tonhal, garnélarák és fokhagyma","offers":[{"@type":"Offer","price":"2495","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}]},{"@type":"MenuItem","name":"Csirke","description":"Mozzarella, paradicsom és csirke","offers":[{"@type":"Offer","price":"2495","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}]},{"@type":"MenuItem","name":"Csirke és gomba","description":"Mozzarella, paradicsom, csirke és gomba","offers":[{"@type":"Offer","price":"2495","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}]},{"@type":"MenuItem","name":"Cannelloni","description":"Mozzarella, paradicsom, darált hús és hagyma","offers":[{"@type":"Offer","price":"2495","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}]},{"@type":"MenuItem","name":"SpiceCube különlegesség","description":"Mozzarella, paradicsom, csirke, hagyma, paprika, chili és kukorica","offers":[{"@type":"Offer","price":"2495","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}]},{"@type":"MenuItem","name":"Tandoori különlegesség","description":"Fokhagymás alap, mozzarella, friss paradicsom, csirke, paprika, kukorica és chili","offers":[{"@type":"Offer","price":"2495","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}]},{"@type":"MenuItem","name":"Vegetáriánus","description":"Mozzarella, paradicsom, hagyma, paprika, kukorica és gomba","offers":[{"@type":"Offer","price":"2495","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}],"suitableForDiet":"https://schema.org/VegetarianDiet"},{"@type":"MenuItem","name":"Gomba","description":"Mozzarella, paradicsom és gomba","offers":[{"@type":"Offer","price":"2495","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}],"suitableForDiet":"https://schema.org/VegetarianDiet"},{"@type":"MenuItem","name":"Fokhagymás kenyér","description":"Frissen sütve, fokhagymás vajjal és mozzarellával","offers":[{"@type":"Offer","price":"2495","priceCurrency":"HUF"},{"@type":"Offer","price":"3495","priceCurrency":"HUF"},{"@type":"Offer","price":"4495","priceCurrency":"HUF"}],"suitableForDiet":"https://schema.org/VegetarianDiet"}]},{"@type":"MenuSection","name":"Smash burgerek","hasMenuItem":[{"@type":"MenuItem","name":"Tax Smash hamburger","description":"Szaftos marhahúspogácsa frissen sült zsemlében, speciális szószunkkal és sajttal.","offers":{"@type":"Offer","price":"2995","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Tax Smash sajtburger","description":"Marhahúspogácsa sajttal, speciális szószunkkal, savanyúsággal és sült hagymával.","offers":{"@type":"Offer","price":"2995","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Tax marhahúsos smash burger","description":"Marhahúspogácsa zöld chilivel, sajttal, speciális szószunkkal és savanyúsággal.","offers":{"@type":"Offer","price":"2995","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Tax Smash hawaii burger","description":"Marhahúspogácsa sajttal, speciális szószunkkal, savanyúsággal és ananászszelettel.","offers":{"@type":"Offer","price":"3295","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Tax Smash jalapeño burger","description":"Marhahúspogácsa speciális szószunkkal, sajttal, savanyúsággal és jalapeñóval.","offers":{"@type":"Offer","price":"3295","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Tax dupla smash sajtburger","description":"Dupla marhahúspogácsa sajttal, speciális szószunkkal és savanyúsággal.","offers":{"@type":"Offer","price":"3995","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Tax Smash BBQ burger","description":"Dupla marhahúspogácsa, dupla cheddar, BBQ szósz, ropogós hagyma és saláta.","offers":{"@type":"Offer","price":"3995","priceCurrency":"HUF"}}]},{"@type":"MenuSection","name":"Peri peri csirke","hasMenuItem":[{"@type":"MenuItem","name":"Negyed peri peri csirke","description":"Negyed csirke peri peri szószban pácolva és grillezve.","offers":{"@type":"Offer","price":"2295","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Fél peri peri csirke","description":"Fél csirke peri peri szószban pácolva és grillezve.","offers":{"@type":"Offer","price":"4595","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Egész peri peri csirke","description":"Egész csirke peri peri szószban pácolva és grillezve.","offers":{"@type":"Offer","price":"7995","priceCurrency":"HUF"}}]},{"@type":"MenuSection","name":"Curryk és biryani","hasMenuItem":[{"@type":"MenuItem","name":"Csirke biryani","description":"Fűszeres csirke illatos basmati rizzsel rétegezve, lassan főzve gyógynövényekkel és aromás fűszerekkel.","offers":{"@type":"Offer","price":"2995","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Vajas csirke basmati rizzsel","description":"Pácolt csirkedarabok lágy, krémes paradicsomos vajszószban. Az egyik legnépszerűbb indiai fogás.","offers":{"@type":"Offer","price":"2995","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Csirke tikka masala basmati rizzsel","description":"Pácolt csirkemell fűszeres paradicsomos-tejszínes szószban. Igazi klasszikus.","offers":{"@type":"Offer","price":"2995","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Csirke curry basmati rizzsel","description":"Csirkedarabok házias, fűszeres curry szószban főzve.","offers":{"@type":"Offer","price":"2995","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Keema matar basmati rizzsel","description":"Darált hús zöldborsóval, hagymával, paradicsommal és hagyományos fűszerekkel főzve.","offers":{"@type":"Offer","price":"3995","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Marha tikka masala","description":"Omlós marhahús fűszeres paradicsomos-tejszínes szószban, basmati rizzsel vagy parathával.","offers":{"@type":"Offer","price":"3995","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Marha curry","description":"Aromás curry szószban párolt marhahús, basmati rizzsel vagy vajas parathával. Fűszeres és laktató.","offers":{"@type":"Offer","price":"3995","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Vajas marha","description":"Marhahús lágy, krémes paradicsomos vajszószban, basmati rizzsel vagy parathával.","offers":{"@type":"Offer","price":"3995","priceCurrency":"HUF"}}]},{"@type":"MenuSection","name":"Spenótos ételek","hasMenuItem":[{"@type":"MenuItem","name":"Spenótos paneer","description":"Indiai spenótos étel házi sajttal, fűszeres mártásban.","offers":{"@type":"Offer","price":"2995","priceCurrency":"HUF"},"suitableForDiet":"https://schema.org/VegetarianDiet"},{"@type":"MenuItem","name":"Spenótos csirke","description":"Spenót fűszeres csirkehússal.","offers":{"@type":"Offer","price":"3295","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Spenótos csicseriborsó","description":"Spenót csicseriborsóval, aromás fűszerekkel.","offers":{"@type":"Offer","price":"3295","priceCurrency":"HUF"},"suitableForDiet":"https://schema.org/VegetarianDiet"},{"@type":"MenuItem","name":"Spenótos marhahús","description":"Spenót fűszeres marhahússal.","offers":{"@type":"Offer","price":"4295","priceCurrency":"HUF"}}]},{"@type":"MenuSection","name":"Rizses ételek","hasMenuItem":[{"@type":"MenuItem","name":"Tojásos sült rizs","description":"Illatos basmati rizs tojással, zöldségekkel és fűszerekkel pirítva.","offers":{"@type":"Offer","price":"2995","priceCurrency":"HUF"},"suitableForDiet":"https://schema.org/VegetarianDiet"},{"@type":"MenuItem","name":"Csirkés sült rizs","description":"Basmati rizs csirkével, zöldségekkel és fűszerekkel pirítva.","offers":{"@type":"Offer","price":"2995","priceCurrency":"HUF"}},{"@type":"MenuItem","name":"Zöldséges sült rizs","description":"Illatos basmati rizs fűszeres zöldségekkel.","offers":{"@type":"Offer","price":"2995","priceCurrency":"HUF"},"suitableForDiet":"https://schema.org/VegetarianDiet"},{"@type":"MenuItem","name":"Darált marhás sült rizs","description":"Basmati rizs darált marhahússal, zöldségekkel és fűszerekkel pirítva.","offers":{"@type":"Offer","price":"3995","priceCurrency":"HUF"}}]},{"@type":"MenuSection","name":"Vegetáriánus ételek","hasMenuItem":[{"@type":"MenuItem","name":"Zöldség curry","description":"Fűszeres vegyes zöldségek ízletes curry szószban.","offers":{"@type":"Offer","price":"2995","priceCurrency":"HUF"},"suitableForDiet":"https://schema.org/VegetarianDiet"},{"@type":"MenuItem","name":"Csicseriborsó curry","description":"Tápláló csicseriborsó gazdag, fűszeres szószban.","offers":{"@type":"Offer","price":"2995","priceCurrency":"HUF"},"suitableForDiet":"https://schema.org/VegetarianDiet"},{"@type":"MenuItem","name":"Dál chawal (lencse rizzsel)","description":"Hagyományos lencse aromás fűszerekkel főzve.","offers":{"@type":"Offer","price":"2995","priceCurrency":"HUF"},"suitableForDiet":"https://schema.org/VegetarianDiet"},{"@type":"MenuItem","name":"Zöldséges biryani","description":"Illatos basmati rizs fűszeres zöldségekkel főzve.","offers":{"@type":"Offer","price":"2995","priceCurrency":"HUF"},"suitableForDiet":"https://schema.org/VegetarianDiet"}]}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Minden étel halal?","acceptedAnswer":{"@type":"Answer","text":"Igen. Minden hús, amit főzünk, halal, a csirke és a marha is."}},{"@type":"Question","name":"Kérhetem enyhébben vagy csípősebben?","acceptedAnswer":{"@type":"Answer","text":"Igen. Minden curry, biryani és peri peri étel rendelésre készül, így mondja meg, mennyire szereti csípősen, az enyhétől a nagyon csípősig."}},{"@type":"Question","name":"Vannak vegetáriánus ételek?","acceptedAnswer":{"@type":"Answer","text":"Igen. Spenótos paneer, csicseriborsó curry, dál chawal, zöldséges biryani, öt vegetáriánus pizza, sajtos rudak és sültkrumpli."}},{"@type":"Question","name":"Lehet elvitelre rendelni?","acceptedAnswer":{"@type":"Answer","text":"Igen. Rendeljen a pultnál, vagy hívjon előre a +36 70 426 7923-as számon, és vigye magával. Elvitelnél 10% csomagolási díjat számolunk fel."}},{"@type":"Question","name":"Hol vannak és hogyan juthatok el oda?","acceptedAnswer":{"@type":"Answer","text":"Rózsa utca 39., 1077 Budapest (VII. kerület), pinceszint. Az Oktogon (M1-es metró, 4-es és 6-os villamos) pár perc sétára van."}},{"@type":"Question","name":"Mikor vannak nyitva?","acceptedAnswer":{"@type":"Answer","text":"Hétfőn 17:00 és 23:30 között, keddtől vasárnapig 15:00 és 23:30 között."}}]}</script></body></html>

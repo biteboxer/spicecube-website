@@ -1,0 +1,24 @@
+/* ===== GOOGLE REVIEWS (excerpts, original English + Hungarian translation) ===== */
+const REVIEWS = [
+ ["Thanh L.","Coming from the New York City area where the burger battle scene is highly competitive - SpiceCube knocked it out of the park. Easily one of the best burgers I've ever tasted.","New York környékéről jövünk, ahol nagy a burgerverseny, a SpiceCube mégis mindent vitt. Könnyen az egyik legjobb burger, amit valaha ettem."],
+ ["Malik A.","Possibly one of the best deep pan Pizza I've ate in a long time, very filling and tasty.","Talán a legjobb deep-pan pizza, amit hosszú ideje ettem, nagyon laktató és finom."],
+ ["Craig H.","Best Butter Chicken ever. Everything was custom made perfectly just how I described in terms of spiciness.","A valaha volt legjobb butter chicken. Mindent pontosan olyan csípősre készítettek, ahogy kértem."],
+ ["Raghu P.","I have tried and reviewed many Indian restaurants in Europe. The authenticity of the Indian food served in this restaurant definitely raised my bar for the remaining restaurants in Europe.","Rengeteg indiai éttermet próbáltam és értékeltem Európában. Az itteni ételek eredetisége magasabbra tette a mércét az összes többi számára."],
+ ["Talal R.","I would say it is the best Pakistani pizza shop in Budapest.","Szerintem ez Budapest legjobb pakisztáni pizzázója."],
+ ["Roland S.","The food is exceptionally good. We came back the next day again because the food was so amazing. And the Karak Chai... OMG!","Kivételesen jó az étel. Másnap visszajöttünk, annyira finom volt. És a karak chai... hihetetlen!"],
+ ["Kajal T.","The biryani was absolutely awesome! I had such a delicious biryani after a long time, and it was full of flavour.","A biryani egyszerűen fantasztikus volt! Régóta nem ettem ilyen finomat, tele volt ízzel."],
+ ["Suman K.","There isn't a lot of halal food in Budapest but I'm so glad I've come across this place. The food is amazing! The portion sizes are great.","Budapesten kevés a halal étel, ezért nagyon örülök, hogy rátaláltam erre a helyre. Az étel csodás, az adagok bőségesek."],
+ ["Adnan R.","SpiceCube served the best and most heartwarming meal I had in Budapest.","A SpiceCube-ban ettem a legjobb és legszívmelengetőbb ételt Budapesten."],
+ ["Samia K.","The Jalapeño burger is by far one of the best burgers I've had in this world in all my travels.","A jalapeño burger messze az egyik legjobb burger, amit utazásaim során valaha ettem."],
+ ["Anisha G.","Fantastic setting, within an old brick cave away from the busy road. Plenty of food options with great flavours.","Fantasztikus hely egy régi téglapincében, távol a forgalmas úttól. Sokféle étel, nagyszerű ízek."],
+ ["Laura K.","The burgers are delicious! The secret sauce is very special and unique, unlike most places.","Isteni burgerek! A titkos szósz nagyon különleges, egészen más, mint máshol."],
+ ["Noémi J.","Amazing place with fantastic food and outstanding service. The staff was kind, helpful, and made us feel very welcome.","Csodás hely fantasztikus ételekkel és kiváló kiszolgálással. A személyzet kedves, segítőkész, és nagyon szívesen láttak minket."],
+ ["Harrie D.","Best burger I've ever had. Going straight back tomorrow. It was that good","A legjobb burger, amit valaha ettem. Holnap egyből jövök vissza. Ennyire jó volt."],
+ ["Ali A.","Best pizza of my life full Pakistani style and peri peri chicken was also so delicious.","Életem legjobb pizzája, igazi pakisztáni stílusban, és a peri peri csirke is nagyon finom volt."],
+ ["Mazhar I.","Short visit to Budapest from United Kingdom some of the best Halal food we have had.","Rövid budapesti látogatás az Egyesült Királyságból: az egyik legjobb halal étel, amit valaha ettünk."],
+ ["Iva T.","Amazing food, unique cuisine and an amazing service. A big recommendation for the Spice Cube Special Pizza and Peri Peri chicken!","Csodás ételek, egyedi konyha és remek kiszolgálás. Nagyon ajánlom a SpiceCube különleges pizzát és a peri peri csirkét!"],
+ ["Andrey D.","We had a super tasty dinner as a family of four (two kids - 3 and 5). The pizzas, burgers, lentil soup, and fries were all amazing!","Négyfős családként (3 és 5 éves gyerekekkel) nagyon finomat vacsoráztunk. A pizzák, a burgerek, a lencseleves és a sültkrumpli mind kiválóak voltak!"],
+ ["Júlia C.","I had amaizing food here, great flavours, very kind service and on top of that - good prices. I really recommend the butter chicken and the pizza.","Csodás ételeket ettem, nagyszerű ízek, nagyon kedves kiszolgálás, és ráadásul jók az árak. A butter chickent és a pizzát különösen ajánlom."],
+ ["Farayha Z.","I came to budapest for 3 days and 2 days i ate from here. Food is super delicious.","Három napra jöttem Budapestre, és ebből kettőn itt ettem. Az étel nagyon finom."]
+];
+const HERO_QUOTE = ["The BEST smashed burgers in Budapest.","Budapest LEGJOBB smash burgerei."];

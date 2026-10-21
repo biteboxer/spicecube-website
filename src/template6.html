@@ -1,0 +1,587 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SpiceCube Budapest</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="SpiceCube, Budapest VII. Halal Pakistani and Indian kitchen, smash burgers, deep-pan pizza and peri peri chicken. Rózsa utca 39. Rated 4.9 on Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+/* Layout: monochrome, app-grade. Black stage for the hero and reviews, clean white menu like a premium delivery app: rounded photo cards, black pills, one serif italic for accent words. No colour except the food. */
+:root{
+  --black:#0A0A0A;
+  --black-2:#161616;
+  --black-3:#232323;
+  --white:#FFFFFF;
+  --grey-1:#F4F4F5;
+  --grey-2:#E4E4E7;
+  --grey-3:#A1A1AA;
+  --grey-4:#71717A;
+  --ink:#09090B;
+  --f-sans:"Geist", "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  --f-serif:"Instrument Serif", "Times New Roman", Georgia, serif;
+  --r-lg:22px; --r-md:16px; --r-sm:999px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--white);color:var(--ink);font-family:var(--f-sans);font-size:1rem;line-height:1.55;-webkit-font-smoothing:antialiased;letter-spacing:-.005em}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--black)}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:6px}
+.wrap{max-width:1280px;margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3,h4{margin:0;font-weight:600;letter-spacing:-.035em;line-height:1.02;text-wrap:balance}
+p{margin:0}
+.serif{font-family:var(--f-serif);font-weight:400;font-style:italic;letter-spacing:-.01em}
+.kicker{font-size:.78rem;font-weight:500;letter-spacing:.02em;color:var(--grey-4);display:inline-flex;align-items:center;gap:8px}
+.kicker::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+html[data-lang="en"] [lang="hu"]:not(html), html[data-lang="hu"] [lang="en"]:not(html){display:none!important}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 26px;border-radius:var(--r-sm);font-weight:500;font-size:.98rem;text-decoration:none;border:1px solid transparent;transition:transform .2s ease,background .2s ease,color .2s ease;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn-white{background:var(--white);color:var(--black)}
+.btn-white:hover{background:var(--grey-2)}
+.btn-outline-w{border-color:#3f3f46;color:var(--white)}
+.btn-outline-w:hover{border-color:var(--white)}
+.btn-black{background:var(--black);color:var(--white)}
+.btn-black:hover{background:#27272a}
+.btn-outline{border-color:var(--grey-2);color:var(--ink)}
+.btn-outline:hover{border-color:var(--ink)}
+.btn svg{width:18px;height:18px}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(10,10,10,.82);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);color:var(--white);border-bottom:1px solid rgba(255,255,255,.06)}
+.top .wrap{display:flex;align-items:center;gap:32px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;font-size:1.15rem;letter-spacing:-.03em}
+.logo img{height:40px;width:auto}
+.logo .cube{width:26px;height:26px;border-radius:7px;background:var(--white);position:relative;flex:none}
+.logo .cube::after{content:"";position:absolute;inset:7px;border-radius:2px;background:var(--black)}
+.nav{display:flex;gap:4px;margin-left:24px}
+.nav a{text-decoration:none;font-size:.9rem;color:var(--grey-3);padding:8px 14px;border-radius:var(--r-sm)}
+.nav a:hover{color:var(--white);background:rgba(255,255,255,.08)}
+.tools{display:flex;align-items:center;gap:10px;margin-left:auto}
+.seg{display:inline-flex;background:var(--black-3);border-radius:var(--r-sm);padding:3px}
+.seg button{all:unset;cursor:pointer;font-size:.78rem;font-weight:600;padding:6px 11px;border-radius:var(--r-sm);color:var(--grey-3)}
+.seg button[aria-pressed="true"]{background:var(--white);color:var(--black)}
+.seg button:focus-visible{outline:2px solid var(--white)}
+.top .btn{height:40px;padding:0 18px;font-size:.88rem}
+@media (max-width:900px){.nav{display:none}}
+@media (max-width:640px){.top .btn{display:none}}
+
+/* hero */
+.hero{background:var(--black);color:var(--white);overflow:hidden;padding-block:72px 0}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:end}
+.hero-grid > *{min-width:0}
+.chip{display:inline-flex;align-items:center;gap:10px;background:var(--black-3);border:1px solid #2e2e2e;border-radius:var(--r-sm);padding:6px 14px 6px 6px;font-size:.85rem;color:var(--grey-3);text-decoration:none}
+.chip b{background:var(--white);color:var(--black);border-radius:var(--r-sm);padding:3px 10px;font-weight:600}
+.chip .st{color:var(--white);letter-spacing:2px}
+.hero h1{font-size:clamp(2.7rem,6.6vw,5.4rem);margin-top:28px;font-weight:600}
+.hero h1 .serif{font-size:1.08em;color:#d4d4d8}
+.hero .lede{color:var(--grey-3);font-size:1.12rem;max-width:30em;margin-top:24px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.hero-side{display:flex;flex-direction:column;gap:14px;padding-bottom:6px}
+.hero-photo{margin:0 0 -64px;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:5/4;position:relative;box-shadow:0 40px 80px -30px rgba(0,0,0,.8)}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-photo figcaption{position:absolute;left:14px;top:14px;background:rgba(10,10,10,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;font-size:.8rem;font-weight:500;padding:6px 12px;border-radius:999px}
+.hero-side .stat-row,.hero-side .open-card{margin-inline:14px}
+.hero-burger{width:min(100%,440px);height:auto;margin:-20px auto -70px;position:relative;z-index:0;filter:drop-shadow(0 50px 50px rgba(0,0,0,.65)) drop-shadow(0 0 80px rgba(255,255,255,.06));animation:float 7s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px) rotate(-1deg)}}
+.hero-side .stat-row,.hero-side .open-card{position:relative;z-index:1}
+.hero-side .stat,.hero-side .open-card{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);background:rgba(22,22,22,.78)}
+@media (max-width:960px){.hero-photo{aspect-ratio:4/3}}
+.stat-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat{background:var(--black-2);border:1px solid #232323;border-radius:var(--r-md);padding:20px}
+.stat b{display:block;font-size:2rem;font-weight:600;letter-spacing:-.04em;line-height:1}
+.stat span{color:var(--grey-3);font-size:.85rem}
+.open-card{background:var(--black-2);border:1px solid #232323;border-radius:var(--r-md);padding:20px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.open-card .dot{width:8px;height:8px;border-radius:50%;background:var(--white);display:inline-block;margin-right:8px;box-shadow:0 0 0 4px rgba(255,255,255,.12)}
+.open-card .closed .dot{background:var(--grey-4);box-shadow:none}
+.open-card small{display:block;color:var(--grey-3);font-size:.85rem}
+.open-card a{font-size:.85rem;color:var(--white)}
+@media (max-width:960px){.hero-grid{grid-template-columns:1fr;gap:40px}.hero{padding-block:48px 0}}
+
+/* photo rail */
+.rail{margin-top:64px;padding-bottom:72px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.rail-track{display:flex;gap:16px;width:max-content;animation:rail 60s linear infinite}
+.rail:hover .rail-track{animation-play-state:paused}
+@keyframes rail{to{transform:translateX(-50%)}}
+.rail figure{margin:0;width:clamp(220px,24vw,320px);aspect-ratio:4/5;border-radius:var(--r-lg);overflow:hidden;position:relative;flex:none;background:var(--black-3)}
+.rail img{width:100%;height:100%;object-fit:cover}
+.rail figcaption{position:absolute;left:12px;bottom:12px;background:rgba(10,10,10,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--white);font-size:.8rem;font-weight:500;padding:6px 12px;border-radius:var(--r-sm)}
+
+/* bento */
+.section{padding-block:110px}
+.sec-top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.sec-top > div{display:flex;flex-direction:column;gap:14px;max-width:38rem}
+.sec-top h2{font-size:clamp(2rem,4vw,3.1rem)}
+.sec-top p{color:var(--grey-4);font-size:1.05rem}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:260px;gap:16px}
+.tile{border-radius:var(--r-lg);overflow:hidden;position:relative;background:var(--grey-1);min-width:0;display:flex;flex-direction:column;justify-content:flex-end;padding:26px;text-decoration:none}
+.tile.photo{color:var(--white)}
+.tile.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.tile.photo:hover img{transform:scale(1.04)}
+.tile.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.72) 100%)}
+.tile > *:not(img){position:relative;z-index:1}
+.tile h3{font-size:1.7rem}
+.tile p{font-size:.95rem;opacity:.85;margin-top:6px;max-width:26em}
+.tile .go{position:absolute;top:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--white);color:var(--black);display:grid;place-items:center;font-size:1.1rem;z-index:1}
+.tile.dark{background:var(--black);color:var(--white)}
+.tile.dark p{color:var(--grey-3);opacity:1}
+.t-big{grid-column:span 2;grid-row:span 2}
+.t-wide{grid-column:span 2}
+.tile .num{font-size:3.4rem;font-weight:600;letter-spacing:-.05em;line-height:1}
+@media (max-width:980px){.bento{grid-template-columns:1fr 1fr;grid-auto-rows:220px}}
+@media (max-width:600px){.bento{grid-template-columns:1fr;grid-auto-rows:auto}.tile{min-height:200px}.t-big,.t-wide{grid-column:auto;grid-row:auto}.t-big{min-height:360px}}
+
+/* menu */
+.menu{background:var(--grey-1);padding-block:100px 120px}
+.pills-bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 68px);z-index:20;background:rgba(244,244,245,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);margin-bottom:40px;border-bottom:1px solid var(--grey-2)}
+.pills{display:flex;gap:8px;overflow-x:auto;padding-block:14px;scrollbar-width:none}
+.pills::-webkit-scrollbar{display:none}
+.pills a{flex:none;text-decoration:none;font-size:.9rem;font-weight:500;padding:9px 16px;border-radius:var(--r-sm);background:var(--white);border:1px solid var(--grey-2);color:var(--ink);transition:background .2s,color .2s}
+.pills a:hover{border-color:var(--ink)}
+.pills a.on{background:var(--black);color:var(--white);border-color:var(--black)}
+.cat{scroll-margin-top:calc(env(safe-area-inset-top,0px) + 140px);margin-bottom:72px}
+.cat-top{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.cat-top h3{font-size:clamp(1.6rem,3vw,2.2rem)}
+.cat-top p{color:var(--grey-4);font-size:.95rem;margin-top:6px}
+.cat-note{display:inline-flex;align-items:center;gap:10px;background:var(--black);color:var(--white);padding:10px 16px;border-radius:var(--r-sm);font-size:.9rem;font-weight:500;margin-bottom:20px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--white);border-radius:var(--r-md);padding:20px;display:flex;gap:16px;min-width:0;border:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+.card:hover{border-color:var(--grey-2);box-shadow:0 10px 30px -18px rgba(0,0,0,.25)}
+.card-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
+.card h4{font-size:1.05rem;font-weight:600;letter-spacing:-.02em;line-height:1.3}
+.card .alt{font-size:.8rem;color:var(--grey-3)}
+.card .desc{font-size:.88rem;color:var(--grey-4);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card .foot{margin-top:auto;padding-top:8px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.price{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;letter-spacing:-.01em}
+.marks{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.mk{font-size:.72rem;font-weight:500;padding:3px 9px;border-radius:var(--r-sm);border:1px solid var(--grey-2);color:var(--grey-4)}
+.mk.new{background:var(--black);color:var(--white);border-color:var(--black)}
+.alg{font-size:.72rem;color:var(--grey-3)}
+.thumb{width:112px;height:112px;border-radius:12px;overflow:hidden;flex:none;background:var(--black)}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.card.feature{grid-column:span 2;padding:0;overflow:hidden}
+.card.stack{flex-direction:column;padding:0;overflow:hidden}
+.card.stack .thumb{width:100%;height:auto;aspect-ratio:4/3;border-radius:0}
+.card.stack .thumb img{transition:transform .6s ease}
+.card.stack:hover .thumb img{transform:scale(1.04)}
+.card.stack .card-body{padding:18px 20px 20px}
+.card.feature .thumb{width:55%;height:auto;border-radius:0;min-height:340px}
+.card.feature .card-body{padding:28px}
+.card.feature h4{font-size:1.4rem}
+.sizes{display:flex;gap:6px;flex-wrap:wrap}
+.size{display:flex;flex-direction:column;align-items:flex-start;background:var(--grey-1);border-radius:10px;padding:6px 11px;line-height:1.25}
+.size small{font-size:.68rem;color:var(--grey-4);font-weight:500}
+.size .price{font-size:.92rem}
+@media (max-width:1080px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:700px){
+  .cards{grid-template-columns:1fr 1fr;gap:10px}
+  .card.stack .card-body{padding:12px 12px 14px;gap:4px}
+  .card.stack h4{font-size:.95rem}
+  .card.stack .desc{font-size:.8rem;-webkit-line-clamp:2}
+  .card.stack .alt{font-size:.72rem}
+  .card.stack .alg{display:none}
+  .card.stack .size{padding:4px 7px}
+  .card.stack .size .price{font-size:.8rem}
+  .card.feature{grid-column:1/-1}
+  .card{padding:16px}
+  .thumb{width:96px;height:96px}
+  .card.feature{grid-column:1/-1;flex-direction:column}
+  .card.feature h4{font-size:1.2rem}
+  .card.feature .card-body{padding:16px}
+  .card.feature .thumb{width:100%;min-height:0;aspect-ratio:16/10}
+}
+.drinks{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.drinks > div{background:var(--white);border-radius:var(--r-md);padding:22px;min-width:0}
+.drinks h4{font-size:1.05rem;margin-bottom:10px}
+.drinks ul{list-style:none;margin:0;padding:0}
+.drinks li{display:flex;gap:10px;align-items:baseline;padding:9px 0;border-top:1px solid var(--grey-1);font-size:.92rem}
+.drinks li span:first-child{flex:1;min-width:0;color:#3f3f46}
+@media (max-width:1080px){.drinks{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.drinks{grid-template-columns:1fr}}
+.menu-foot{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.menu-foot > *{background:var(--white);border-radius:var(--r-md);padding:22px;min-width:0;font-size:.9rem;color:var(--grey-4)}
+details summary{cursor:pointer;font-weight:600;color:var(--ink);list-style:none;display:flex;justify-content:space-between}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";font-weight:400}
+details[open] summary::after{content:"−"}
+details ol{columns:2;column-gap:28px;margin:14px 0 0;padding-left:1.5em}
+@media (max-width:700px){.menu-foot{grid-template-columns:1fr}}
+
+/* reviews */
+.reviews{background:var(--black);color:var(--white)}
+.reviews .sec-top p{color:var(--grey-3)}
+.reviews .kicker{color:var(--grey-3)}
+.big-score{display:flex;align-items:center;gap:18px}
+.big-score b{font-size:5rem;font-weight:600;letter-spacing:-.06em;line-height:.9}
+.big-score > span{color:var(--grey-3);font-size:.9rem}
+.big-score .st{color:var(--white);letter-spacing:3px;font-size:1rem;display:block}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rv figure{margin:0;background:var(--black-2);border:1px solid #232323;border-radius:var(--r-lg);padding:28px;display:flex;flex-direction:column;gap:22px;min-width:0}
+.rv blockquote{margin:0;font-size:1.02rem;color:#e4e4e7}
+.rv .lead{grid-column:span 2;background:var(--white);color:var(--black);border-color:var(--white)}
+.rv .lead blockquote{font-family:var(--f-serif);font-size:clamp(1.6rem,2.8vw,2.3rem);line-height:1.2;color:var(--black)}
+.rv figcaption{margin-top:auto;font-size:.82rem;color:var(--grey-3);display:flex;align-items:center;gap:8px}
+.rv figcaption .st{color:inherit;letter-spacing:2px}
+.rv .lead figcaption{color:var(--grey-4)}
+@media (max-width:900px){.rv{grid-template-columns:1fr}.rv .lead{grid-column:auto}}
+
+/* visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.visit-grid > *{min-width:0}
+.panel{background:var(--grey-1);border-radius:var(--r-lg);padding:36px}
+.panel.dark{background:var(--black);color:var(--white)}
+.addr{font-size:clamp(1.7rem,3vw,2.4rem);font-weight:600;letter-spacing:-.04em;line-height:1.1}
+.addr small{display:block;font-size:1rem;font-weight:400;color:var(--grey-3);letter-spacing:0;margin-top:10px}
+.contact{margin:30px 0;display:grid;gap:4px}
+.contact a{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid #2a2a2a;text-decoration:none;font-size:1.05rem}
+.contact a span:first-child{color:var(--grey-3);font-size:.9rem}
+.panel .ctas{display:flex;flex-wrap:wrap;gap:10px}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;color:var(--ink)}
+.hours td{padding:14px 0;border-top:1px solid var(--grey-2);color:var(--ink)}
+.hours td:last-child{text-align:right;font-weight:500}
+.hours tr.today td{font-weight:700}
+.hours tr.today td:first-child::after{content:"  •";}
+.panel h3{font-size:1.3rem;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.status{font-size:.78rem;font-weight:600;background:var(--black);color:var(--white);border-radius:var(--r-sm);padding:5px 12px;letter-spacing:0}
+@media (max-width:860px){.visit-grid{grid-template-columns:1fr}.panel{padding:26px}}
+
+/* hero quote */
+.hq{margin-top:22px;font-family:var(--f-serif);font-style:italic;font-size:1.35rem;color:#e4e4e7;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
+.hq small{font-family:var(--f-sans);font-style:normal;font-size:.8rem;color:var(--grey-4)}
+/* review wall */
+.wall{display:flex;flex-direction:column;gap:14px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);margin-top:14px}
+.wall-row{display:flex;gap:14px;width:max-content;animation:rail 90s linear infinite}
+.wall-row.rev{animation-direction:reverse;animation-duration:110s}
+.wall:hover .wall-row{animation-play-state:paused}
+.rc{width:340px;flex:none;background:var(--black-2);border:1px solid #232323;border-radius:var(--r-lg);padding:24px;display:flex;flex-direction:column;gap:16px;white-space:normal}
+.rc .st{color:var(--white);letter-spacing:2px;font-size:.85rem}
+.rc p{color:#e4e4e7;font-size:.95rem;line-height:1.5}
+.rc .who{display:flex;align-items:center;gap:10px;margin-top:auto;font-size:.85rem}
+.rc .av{width:34px;height:34px;border-radius:50%;background:var(--white);color:var(--black);display:grid;place-items:center;font-weight:600;font-size:.85rem;flex:none}
+.rc .who small{display:block;color:var(--grey-4);font-size:.75rem}
+.tr-note{font-size:.72rem;color:var(--grey-4)}
+.g-badge{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;color:var(--grey-3)}
+/* faq */
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.faq details{background:var(--grey-1);border-radius:var(--r-md);padding:22px 24px;min-width:0}
+.faq summary{font-size:1.05rem;letter-spacing:-.015em;gap:16px}
+.faq details p{color:var(--grey-4);margin-top:12px;font-size:.95rem}
+@media (max-width:800px){.faq{grid-template-columns:1fr}}
+footer{background:var(--black);color:var(--grey-3);font-size:.85rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-block:30px}
+footer .logo{color:var(--white)}
+
+/* mobile app bar */
+.appbar{display:none}
+@media (max-width:700px){
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+  .appbar{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:55;background:rgba(10,10,10,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:10px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+  .appbar a{display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--grey-3);text-decoration:none;font-size:.72rem;font-weight:500;padding:6px 0;border-radius:12px}
+  .appbar a.main{background:var(--white);color:var(--black)}
+  .appbar svg{width:20px;height:20px}
+}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="SpiceCube"><img src="img/logo.webp" alt="SpiceCube" width="110" height="40"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#menu"><span lang="en">Menu</span><span lang="hu">Étlap</span></a>
+      <a href="#about"><span lang="en">About</span><span lang="hu">Rólunk</span></a>
+      <a href="#reviews"><span lang="en">Reviews</span><span lang="hu">Vélemények</span></a>
+      <a href="#visit"><span lang="en">Visit</span><span lang="hu">Elérhetőség</span></a>
+    </nav>
+    <div class="tools">
+      <div class="seg" role="group" aria-label="Language">
+        <button type="button" id="lang-hu" data-set="hu" aria-pressed="true">HU</button>
+        <button type="button" id="lang-en" data-set="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn-white" href="tel:+36704267923">+36 70 426 7923</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <a class="chip" href="#reviews"><b>4.9</b><span class="st" aria-hidden="true">★★★★★</span><span lang="en">756 Google reviews</span><span lang="hu">756 Google-értékelés</span></a>
+        <h1>
+          <span lang="en">Halal Indian &amp; Pakistani kitchen in the <span class="serif">heart of Budapest</span></span>
+          <span lang="hu">Halal indiai és pakisztáni konyha <span class="serif">Budapest szívében</span></span>
+        </h1>
+        <p class="hq" id="hq"></p>
+        <p class="lede">
+          <span lang="en">Pakistani and Indian dishes cooked from scratch, smash burgers on buns baked here every day, and the deep-pan pizza Budapest was missing. Downstairs at Rózsa utca 39.</span>
+          <span lang="hu">Alapanyagból főzött pakisztáni és indiai ételek, naponta sütött zsemlében készülő smash burgerek és a deep-pan pizza, ami eddig hiányzott Budapestről. A Rózsa utca 39. alagsorában.</span>
+        </p>
+        <div class="ctas">
+          <a class="btn btn-white" href="#menu"><span lang="en">Explore the menu</span><span lang="hu">Az étlap</span></a>
+          <a class="btn btn-outline-w" href="https://www.google.com/maps/dir/?api=1&destination=SpiceCube%2C%20R%C3%B3zsa%20u.%2039%2C%201077%20Budapest&destination_place_id=ChIJJZ7T1IzdQUcRq_umouCGos0" target="_blank" rel="noopener"><span lang="en">Get directions</span><span lang="hu">Útvonal</span></a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <figure class="hero-photo"><img src="img/burger-check.webp" alt="SpiceCube double smash burger" fetchpriority="high"><figcaption><span lang="en">Tax Double Smash</span><span lang="hu">Tax dupla smash</span></figcaption></figure>
+        <div class="stat-row">
+          <div class="stat"><b>100%</b><span lang="en">Halal, every dish</span><span lang="hu">Halal, minden fogás</span></div>
+          <div class="stat"><b>55</b><span lang="en">Dishes on the menu</span><span lang="hu">Fogás az étlapon</span></div>
+        </div>
+        <div class="open-card">
+          <div id="hero-status"></div>
+          <a href="#visit"><span lang="en">All hours</span><span lang="hu">Nyitvatartás</span> →</a>
+        </div>
+      </div>
+    </div>
+    <div class="rail" aria-label="Food from our kitchen">
+      <div class="rail-track" id="rail"></div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="sec-top">
+        <div>
+          <span class="kicker"><span lang="en">Three kitchens, one counter</span><span lang="hu">Három konyha, egy pult</span></span>
+          <h2><span lang="en">Made here. <span class="serif">No shortcuts.</span></span><span lang="hu">Helyben készül. <span class="serif">Rövidítés nélkül.</span></span></h2>
+          <p><span lang="en">We make our own patties, our own pizza dough and every curry base. Tell us how hot you like it and we'll cook it that way.</span><span lang="hu">A húspogácsát, a pizzatésztát és minden curry alapot mi készítjük. Mondja meg, mennyire szereti csípősen, és úgy főzzük.</span></p>
+        </div>
+      </div>
+      <div class="bento">
+        <a class="tile photo t-big" href="#pizza">
+          <img src="img/pizza-jalapeno.webp" alt="Deep-pan pizza with jalapeños" decoding="async">
+          <span class="go" aria-hidden="true">↗</span>
+          <h3><span lang="en">Deep-pan pizza</span><span lang="hu">Deep-pan pizza</span></h3>
+          <p><span lang="en">A slice of England in Budapest. Thick, soft and loaded, in three sizes.</span><span lang="hu">Egy falat Anglia Budapesten. Vastag, puha, bőven megrakott, három méretben.</span></p>
+        </a>
+        <a class="tile photo" href="#burgers">
+          <img src="img/burger-cheese.webp" alt="Smash cheeseburger" decoding="async">
+          <span class="go" aria-hidden="true">↗</span>
+          <h3><span lang="en">Smash burgers</span><span lang="hu">Smash burgerek</span></h3>
+        </a>
+        <a class="tile photo" href="#peri">
+          <img src="img/peri-rice.webp" alt="Peri peri chicken with rice" decoding="async">
+          <span class="go" aria-hidden="true">↗</span>
+          <h3><span lang="en">Peri peri</span><span lang="hu">Peri peri</span></h3>
+        </a>
+        <a class="tile photo t-wide" href="#curries">
+          <img src="img/curry-new.webp" alt="Butter chicken with basmati rice" decoding="async">
+          <span class="go" aria-hidden="true">↗</span>
+          <h3><span lang="en">Curries &amp; biryani</span><span lang="hu">Curryk és biryani</span></h3>
+          <p><span lang="en">Butter chicken, keema matar, palak dishes and karak chai.</span><span lang="hu">Vajas csirke, keema matar, spenótos ételek és karak chai.</span></p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <div class="sec-top" style="margin-bottom:28px">
+        <div>
+          <span class="kicker"><span lang="en">Menu</span><span lang="hu">Étlap</span></span>
+          <h2><span lang="en">Everything we <span class="serif">cook</span></span><span lang="hu">Minden, amit <span class="serif">főzünk</span></span></h2>
+        </div>
+        <p style="color:var(--grey-4);max-width:24rem"><span lang="en">Prices in Hungarian forint. Allergen numbers are listed on each dish, with the key at the end.</span><span lang="hu">Az árak forintban értendők. Az allergének számai az ételeknél, a lista az étlap végén.</span></p>
+      </div>
+    </div>
+    <div class="pills-bar"><div class="wrap"><nav class="pills" id="cats" aria-label="Menu sections"></nav></div></div>
+    <div class="wrap" id="menu-body"></div>
+  </section>
+
+  <section class="section reviews" id="reviews">
+    <div class="wrap">
+      <div class="sec-top">
+        <div>
+          <span class="kicker"><span lang="en">Google reviews</span><span lang="hu">Google-értékelések</span></span>
+          <h2><span lang="en">756 guests. <span class="serif">4.9 stars.</span></span><span lang="hu">756 vendég. <span class="serif">4,9 csillag.</span></span></h2>
+          <p><span lang="en">Locals, students and visitors from London to New York. This is what they wrote on Google.</span><span lang="hu">Helyiek, diákok és látogatók Londontól New Yorkig. Ezt írták rólunk a Google-on.</span></p>
+        </div>
+        <div class="big-score"><b><span lang="en">4.9</span><span lang="hu">4,9</span></b><span><span class="st" aria-label="4.9 / 5">★★★★★</span><span lang="en">756 reviews on Google</span><span lang="hu">756 Google-értékelés</span></span></div>
+      </div>
+      <div class="rv">
+        <figure class="lead"><blockquote><span lang="en">"Coming from the New York City area where the burger battle scene is highly competitive, SpiceCube knocked it out of the park."</span><span lang="hu">"New York környékéről jövünk, ahol nagy a burgerverseny, a SpiceCube mégis mindent vitt."</span></blockquote><figcaption><span class="st">★★★★★</span> Thanh L. · Google</figcaption></figure>
+        <figure><blockquote><span lang="en">"I have tried and reviewed many Indian restaurants in Europe. The authenticity of the Indian food served here definitely raised my bar."</span><span lang="hu">"Rengeteg indiai éttermet próbáltam Európában. Az itteni ételek eredetisége magasabbra tette a mércét."</span></blockquote><figcaption><span class="st">★★★★★</span> Raghu P. · Google</figcaption></figure>
+      </div>
+    </div>
+    <div class="wall" aria-label="Google reviews">
+      <div class="wall-row" id="wall1"></div>
+      <div class="wall-row rev" id="wall2"></div>
+    </div>
+    <div class="wrap" style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+      <a class="btn btn-white" href="https://search.google.com/local/reviews?placeid=ChIJJZ7T1IzdQUcRq_umouCGos0" target="_blank" rel="noopener"><span lang="en">Read all 756 reviews</span><span lang="hu">Mind a 756 értékelés</span></a>
+      <a class="btn btn-outline-w" href="https://search.google.com/local/writereview?placeid=ChIJJZ7T1IzdQUcRq_umouCGos0" target="_blank" rel="noopener"><span lang="en">Write a review</span><span lang="hu">Értékeljen minket</span></a>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="sec-top"><div>
+        <span class="kicker"><span lang="en">Good to know</span><span lang="hu">Jó tudni</span></span>
+        <h2><span lang="en">Questions <span class="serif">we get asked</span></span><span lang="hu">Gyakori <span class="serif">kérdések</span></span></h2>
+      </div></div>
+      <div class="faq" id="faq-list"></div>
+    </div>
+  </section>
+
+  <section class="section" id="visit">
+    <div class="wrap">
+      <div class="sec-top">
+        <div>
+          <span class="kicker"><span lang="en">Visit</span><span lang="hu">Látogasson el</span></span>
+          <h2><span lang="en">Find us on <span class="serif">Rózsa utca</span></span><span lang="hu">A <span class="serif">Rózsa utcában</span> vagyunk</span></h2>
+        </div>
+      </div>
+      <div class="visit-grid">
+        <div class="panel dark">
+          <p class="addr">Rózsa utca 39<br>1077 Budapest<small><span lang="en">Lower floor, a short walk from Oktogon</span><span lang="hu">Pinceszint, pár perc sétára az Oktogontól</span></small></p>
+          <div class="contact">
+            <a href="tel:+36704267923"><span><span lang="en">Phone</span><span lang="hu">Telefon</span></span><span>+36 70 426 7923</span></a>
+            <a href="mailto:info@spicecube.hu"><span>Email</span><span>info@spicecube.hu</span></a>
+          </div>
+          <div class="ctas">
+            <a class="btn btn-white" href="https://www.google.com/maps/dir/?api=1&destination=SpiceCube%2C%20R%C3%B3zsa%20u.%2039%2C%201077%20Budapest&destination_place_id=ChIJJZ7T1IzdQUcRq_umouCGos0" target="_blank" rel="noopener"><span lang="en">Directions</span><span lang="hu">Útvonal</span></a>
+            <a class="btn btn-outline-w" href="https://www.google.com/maps/search/?api=1&query=SpiceCube%20Budapest&query_place_id=ChIJJZ7T1IzdQUcRq_umouCGos0" target="_blank" rel="noopener">Google Maps</a>
+          </div>
+        </div>
+        <div class="panel">
+          <h3><span><span lang="en">Opening hours</span><span lang="hu">Nyitvatartás</span></span><span class="status" id="status"></span></h3>
+          <table class="hours" id="hours"></table>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="logo"><img src="img/logo.webp" alt="SpiceCube" width="110" height="40" decoding="async"></span>
+    <span>Rózsa u. 39, 1077 Budapest · +36 70 426 7923 · info@spicecube.hu</span>
+    <span>© 2026 SpiceCube</span>
+  </div>
+</footer>
+
+<nav class="appbar" aria-label="Quick actions">
+  <a href="#menu" class="main"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span lang="en">Menu</span><span lang="hu">Étlap</span></a>
+  <a href="tel:+36704267923"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span lang="en">Call</span><span lang="hu">Hívás</span></a>
+  <a href="https://www.google.com/maps/dir/?api=1&destination=SpiceCube%2C%20R%C3%B3zsa%20u.%2039%2C%201077%20Budapest&destination_place_id=ChIJJZ7T1IzdQUcRq_umouCGos0" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-8-8 18-2-8z"/></svg><span lang="en">Directions</span><span lang="hu">Útvonal</span></a>
+</nav>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"SpiceCube","url":"https://spicecube.hu/","telephone":"+36704267923","email":"info@spicecube.hu","servesCuisine":["Pakistani","Indian","Pizza","Burgers","Halal"],"address":{"@type":"PostalAddress","streetAddress":"Rózsa utca 39","postalCode":"1077","addressLocality":"Budapest","addressCountry":"HU"},"geo":{"@type":"GeoCoordinates","latitude":47.5053759,"longitude":19.0721576},"hasMenu":"https://spicecube.hu/#menu","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"17:00","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"15:00","closes":"23:30"}]}
+</script>
+
+<script>
+/* ===== MENU DATA: edit prices here. p = price in Ft (pizza: [24cm, 26cm, 30cm]). a = allergen numbers. t = tags ===== */
+/*DATA*/
+/*REVIEWS*/
+const FAQ = [
+ ["Is all the food halal?","Minden étel halal?","Yes. All the meat we cook is halal, chicken and beef alike.","Igen. Minden hús, amit főzünk, halal, a csirke és a marha is."],
+ ["Can I choose how spicy my food is?","Kérhetem enyhébben vagy csípősebben?","Yes. Every curry, biryani and peri peri dish is cooked to order, so tell us how hot you like it, from mild to very spicy.","Igen. Minden curry, biryani és peri peri étel rendelésre készül, így mondja meg, mennyire szereti csípősen, az enyhétől a nagyon csípősig."],
+ ["Do you have vegetarian dishes?","Vannak vegetáriánus ételek?","Yes. Palak paneer, chickpea curry, dal chawal, vegetable biryani, five vegetarian pizzas, cheese sticks and fries.","Igen. Spenótos paneer, csicseriborsó curry, dál chawal, zöldséges biryani, öt vegetáriánus pizza, sajtos rudak és sültkrumpli."],
+ ["Can I take food away?","Lehet elvitelre rendelni?","Yes. Order at the counter, or call ahead on +36 70 426 7923 and collect. A 10% packaging charge applies to takeaway.","Igen. Rendeljen a pultnál, vagy hívjon előre a +36 70 426 7923-as számon, és vigye magával. Elvitelnél 10% csomagolási díjat számolunk fel."],
+ ["Where are you and how do I get there?","Hol vannak és hogyan juthatok el oda?","Rózsa utca 39, 1077 Budapest (District VII), on the lower floor. Oktogon (M1 metro, trams 4 and 6) is a short walk away.","Rózsa utca 39., 1077 Budapest (VII. kerület), pinceszint. Az Oktogon (M1-es metró, 4-es és 6-os villamos) pár perc sétára van."],
+ ["What are your opening hours?","Mikor vannak nyitva?","Monday 17:00 to 23:30, Tuesday to Sunday 15:00 to 23:30.","Hétfőn 17:00 és 23:30 között, keddtől vasárnapig 15:00 és 23:30 között."]
+];
+/* ===== PHOTOS: dish name (English) -> image file. Add a line here when new photos arrive. ===== */
+const PHOTOS = {
+  "Garlic Cheese Sticks":"garlic-sticks","Cheese Sticks (2 pcs)":"cheese-sticks-2","Peri Peri Wings (6 pcs)":"wings-plate","Red Lentil Soup":"soup",
+  "Masala Fries":"fries-3","Crispy Fries":"fries-1","Crispy Potato Wedges":"fries-2",
+  "Margherita":"pizza-check","Chicken Corn":"pizza-chicken-corn","Prosciutto":"pizza-17","Prosciutto Funghi":"pizza-twin-a","Hawaiian":"pizza-box",
+  "Mafiosa":"pizza-close","Americana":"pizza-pair-b","Mighty Meaty":"pizza-slice","Seafood":"pizza-pair","Pescatori":"pizza-twin",
+  "Pollo":"pizza-17","Pollo e Funghi":"pizza-check","Cannelloni":"pizza-slice","SpiceCube Special":"pizza-special","Tandoori Special":"pizza-jalapeno-box",
+  "Vegetarian":"pizza-top","Funghi":"pizza-close","Garlic Bread":"pizza-jalapeno",
+  "Tax Smash Hamburger":"burger-classic","Tax Smash Cheese Burger":"burger-cheese","Tax Beef Smash Burger":"burger-chilli","Tax Smash Hawaiian Burger":"burger-pickle",
+  "Tax Smash Jalapeño Burger":"burger-jalapeno","Tax Double Smash Cheese Burger":"burger-check","Tax Smash BBQ Burger":"burger-platter-2",
+  "Quarter Peri Peri Chicken":"peri-quarter","Half Peri Peri Chicken":"peri-rice","Whole Peri Peri Chicken":"peri-box",
+  "Chicken Biryani":"fried-rice","Butter Chicken with Basmati Rice":"curry-new","Chicken Tikka Masala with Basmati Rice":"curry-new-2",
+  "Chicken Curry with Basmati Rice":"curry-pan","Keema Matar with Basmati Rice":"keema","Beef Tikka Masala":"curry-new-3","Beef Curry":"keema-2","Butter Beef":"curry-new-4",
+  "Palak Paneer":"palak-2","Palak Chicken":"palak","Palak Chana":"palak-3","Palak Beef":"palak-4",
+  "Egg Fried Rice":"rice-green","Chicken Fried Rice":"fried-rice-2","Vegetable Fried Rice":"veg-rice","Beef Mince Fried Rice":"rice-green-2",
+  "Vegetable Curry":"curry-pan","Chickpea Curry":"curry-new-3","Dal Chawal":"curry-new-2","Vegetable Biryani":"fried-rice-2"
+};
+const FEATURE = {starters:"Peri Peri Wings (6 pcs)", pizza:"SpiceCube Special", burgers:"Tax Double Smash Cheese Burger", peri:"Half Peri Peri Chicken", curries:"Butter Chicken with Basmati Rice", spinach:"Palak Chicken", rice:"Egg Fried Rice"};
+const RAIL = [["burger-platter","Burger, wings & fries","Burger, szárnyak, sültkrumpli"],["curry-new","Butter chicken","Vajas csirke"],["pizza-jalapeno-box","Tandoori Special","Tandoori különlegesség"],["burger-check","Double smash","Dupla smash"],["palak","Palak chicken","Spenótos csirke"],["peri-rice","Peri peri chicken","Peri peri csirke"],["pizza-top","Deep-pan pizza","Deep-pan pizza"],["keema","Keema matar","Keema matar"],["rice-green","Egg fried rice","Tojásos sült rizs"],["wings-fries","Wings & masala fries","Szárnyak, masala krumpli"],["burger-chilli","Green chilli smash","Zöld chilis smash"],["burger-line","Fresh off the grill","Frissen a grillről"],["pizza-close","Loaded to the edge","Szélig megrakva"]];
+
+/* ===== rendering ===== */
+const ft = n => n.toLocaleString("hu-HU").replace(/\s/g," ") + " Ft";
+const both = (en,hu) => `<span lang="en">${en}</span><span lang="hu">${hu}</span>`;
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
+const TAGS = {new:["New","Új"], veg:["Vegetarian","Vegetáriánus"], hot:["Spicy","Csípős"]};
+function marks(it){
+  const t=(it.t||[]).map(k=>`<span class="mk ${k}">${both(...TAGS[k])}</span>`).join("");
+  const a=it.a&&it.a.length?`<span class="alg">${both("Allergens","Allergének")}: ${it.a.join(", ")}</span>`:"";
+  return `<div class="marks">${t}${a}</div>`;
+}
+const alt = it => it.hu.toLowerCase()===it.en.toLowerCase()?"":`<span class="alt">${both(esc(it.hu),esc(it.en))}</span>`;
+function priceHtml(it){
+  if(Array.isArray(it.p)) return `<div class="sizes">${it.p.map((v,i)=>`<span class="size"><small>${["24 cm","26 cm","30 cm"][i]}</small><span class="price">${ft(v)}</span></span>`).join("")}</div>`;
+  return `<span class="price">${ft(it.p)}</span>`;
+}
+function card(it,feature){
+  const ph=PHOTOS[it.en];
+  const stack=!!ph;
+  const thumb=ph?`<div class="thumb"><img src="img/${ph}.webp" alt="${esc(it.en)}" decoding="async"></div>`:"";
+  const body=`<div class="card-body"><h4>${both(esc(it.en),esc(it.hu))}</h4>${alt(it)}<p class="desc">${both(esc(it.den),esc(it.dhu))}</p><div class="foot">${priceHtml(it)}</div>${marks(it)}</div>`;
+  return feature&&ph?`<article class="card feature">${thumb}${body}</article>`:stack?`<article class="card stack">${thumb}${body}</article>`:`<article class="card">${body}${thumb}</article>`;
+}
+function render(){
+  const body=document.getElementById("menu-body"), cats=document.getElementById("cats");
+  let h="", n="";
+  for(const c of MENU){
+    n+=`<a href="#${c.id}" data-id="${c.id}">${both(c.en,c.hu)}</a>`;
+    const f=FEATURE[c.id];
+    const items=f?[...c.items.filter(i=>i.en===f),...c.items.filter(i=>i.en!==f)]:c.items;
+    h+=`<section class="cat" id="${c.id}"><div class="cat-top"><div><h3>${both(c.en,c.hu)}</h3><p>${both(c.den,c.dhu)}</p></div></div>${c.note?`<p class="cat-note">${both(c.note.en,c.note.hu)}</p>`:""}<div class="cards">${items.map(i=>card(i,i.en===f)).join("")}</div></section>`;
+  }
+  const d=DRINKS;
+  n+=`<a href="#drinks" data-id="drinks">${both(d.en,d.hu)}</a>`;
+  h+=`<section class="cat" id="drinks"><div class="cat-top"><div><h3>${both(d.en,d.hu)}</h3><p>${both(d.den,d.dhu)}</p></div></div><div class="drinks">${d.groups.map(g=>`<div><h4>${both(g.en,g.hu)}</h4><ul>${g.rows.map(r=>`<li><span>${both(r[0],r[1])}</span><span class="price">${ft(r[2])}</span></li>`).join("")}</ul></div>`).join("")}</div></section>`;
+  h+=`<div class="menu-foot"><p>${both("A 10% service charge applies to dine-in orders and a 10% packaging charge to takeaway. If you have a food allergy or dietary need, please tell us when you order.","Helyben fogyasztás esetén 10% szervízdíjat, elvitelnél 10% csomagolási díjat számolunk fel. Ha ételallergiája vagy speciális étrendi igénye van, kérjük, jelezze rendeléskor.")}</p>
+    <details><summary>${both("Allergen key","Allergének listája")}</summary><ol>${ALLERGENS.map(x=>`<li>${both(x[1],x[0])}</li>`).join("")}</ol></details></div>`;
+  body.innerHTML=h; cats.innerHTML=n;
+  initMenuNav();
+  const rail=RAIL.map(r=>`<figure><img src="img/${r[0]}.webp" alt="" decoding="async"><figcaption>${both(r[1],r[2])}</figcaption></figure>`).join("");
+  document.getElementById("rail").innerHTML=rail+rail.replace(/<figure>/g,'<figure aria-hidden="true">');
+}
+function initMenuNav(){
+  const cats=document.getElementById("cats");
+  const links=[...cats.querySelectorAll("a")];
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle("on",l.dataset.id===e.target.id));const on=cats.querySelector(".on");if(on)cats.scrollTo({left:on.offsetLeft-20,behavior:"smooth"});}})},{rootMargin:"-35% 0px -55% 0px"});
+  document.querySelectorAll(".cat").forEach(s=>io.observe(s));
+}
+function renderExtras(){
+  const initials=n=>n.split(/\s+/).map(w=>w[0]).join("").slice(0,2).toUpperCase();
+  const rc=r=>`<figure class="rc" style="margin:0"><span class="st">★★★★★</span><p>${both("“"+esc(r[1])+"”","„"+esc(r[2])+"”")}</p><div class="who"><span class="av">${initials(r[0])}</span><span>${esc(r[0])}<small>Google ${both("review","értékelés")}<span lang="hu" class="tr-note"> · fordítás</span></small></span></div></figure>`;
+  const half=Math.ceil(REVIEWS.length/2);
+  const r1=REVIEWS.slice(0,half).map(rc).join(""), r2=REVIEWS.slice(half).map(rc).join("");
+  document.getElementById("wall1").innerHTML=r1+r1.replace(/<figure /g,'<figure aria-hidden="true" ');
+  document.getElementById("wall2").innerHTML=r2+r2.replace(/<figure /g,'<figure aria-hidden="true" ');
+  document.getElementById("hq").innerHTML=both("“"+HERO_QUOTE[0]+"”","„"+HERO_QUOTE[1]+"”")+`<small>${both("Google review","Google-értékelés")}</small>`;
+  document.getElementById("faq-list").innerHTML=FAQ.map(f=>`<details><summary>${both(f[0],f[1])}</summary><p>${both(f[2],f[3])}</p></details>`).join("");
+}
+function renderHours(){
+  const now=new Date(new Date().toLocaleString("en-US",{timeZone:"Europe/Budapest"}));
+  const today=now.getDay();
+  document.getElementById("hours").innerHTML=[1,2,3,4,5,6,0].map(i=>{const r=HOURS[i];return `<tr class="${i===today?"today":""}"><td>${both(r[1],r[0])}</td><td>${r[2]} – ${r[3]}</td></tr>`}).join("");
+  const r=HOURS[today], m=now.getHours()*60+now.getMinutes(), toM=s=>{const[a,b]=s.split(":");return +a*60+ +b};
+  const open=m>=toM(r[2])&&m<toM(r[3]), before=m<toM(r[2]);
+  const label=open?both("Open now","Most nyitva"):both("Closed now","Most zárva");
+  const sub=open?both("Until "+r[3]+" tonight","Ma "+r[3]+"-ig"):before?both("Opens today at "+r[2],"Ma "+r[2]+"-kor nyit"):both("Opens tomorrow at "+HOURS[(today+1)%7][2],"Holnap "+HOURS[(today+1)%7][2]+"-kor nyit");
+  document.getElementById("status").innerHTML=label;
+  document.getElementById("hero-status").innerHTML=`<div class="${open?"":"closed"}"><span class="dot"></span><b>${label}</b><small>${sub}</small></div>`;
+}
+function setLang(l){
+  document.documentElement.dataset.lang=l; document.documentElement.lang=l;
+  document.querySelectorAll(".seg button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.set===l)));
+  try{localStorage.setItem("sc-lang",l)}catch(e){}
+}
+let start=document.documentElement.dataset.fixed||"hu";
+if(!document.documentElement.dataset.fixed){try{start=localStorage.getItem("sc-lang")||"hu"}catch(e){}}
+setLang(start);
+document.querySelectorAll(".seg button").forEach(b=>b.addEventListener("click",()=>{ if(document.documentElement.dataset.fixed){location.href=b.dataset.set==="en"?"/en/":"/";} else setLang(b.dataset.set);}));
+if(!document.documentElement.dataset.fixed){render(); renderExtras();} else {initMenuNav();}
+renderHours();
+</script>
